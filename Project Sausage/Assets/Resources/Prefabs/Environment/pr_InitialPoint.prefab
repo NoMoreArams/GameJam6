@@ -36,15 +36,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 139110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32dfb9affc5493c4190d02805d511a81, type: 3}
+  m_Script: {fileID: 11500000, guid: f0614c990262646f9a01b2aef843f24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy:
-  - {fileID: 172488, guid: 054b0eab8be503c4c9de4b470e9c0b60, type: 2}
-  initialsWayPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  enemy: []
+  initialsWayPoints: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

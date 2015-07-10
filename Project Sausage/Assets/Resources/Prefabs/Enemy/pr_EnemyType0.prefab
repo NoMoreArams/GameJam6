@@ -134,9 +134,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 172488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7ca7206e3744b489dd6aed58ff7ad3, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a257c4f305a4ab888c44e15f2bf7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPointToMove: {fileID: 0}
+  rank: .75
+  distance: 0
 --- !u!114 &11430052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,12 +148,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 172488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df79f5199a8d2464f85493f554879e81, type: 3}
+  m_Script: {fileID: 11500000, guid: 42a2352e2699e4694b4cae8bb3870d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPointToMove: {fileID: 0}
-  rank: 1
-  distance: 0
 --- !u!135 &13578732
 SphereCollider:
   m_ObjectHideFlags: 1
