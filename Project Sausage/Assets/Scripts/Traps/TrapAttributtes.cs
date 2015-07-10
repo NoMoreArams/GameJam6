@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TrapAttributtes : MonoBehaviour {
 	public int hits;
-	public float damage;
+	public int damage;
 	public int coins;
 	public int debuff;
 	public float cooldown;
