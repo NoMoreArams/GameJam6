@@ -1,0 +1,92 @@
+IMPORTANTE
+
+- TAGS
+	* Enemy
+	* Player
+	* Ground
+	* Wall
+	* Trap
+IMPORTANTE
+
+- HITO 1 - 11/07/2015 02:00
+	
+- HITO 2 - 11/07/2015 13:00
+
+- HITO 3 - 11/07/2015 20:00
+
+- HITO 4 - 12/07/2015 02:00
+
+- HITO 5 - 12/07/2015 12:00
+
+- HITO 5 - 12/07/2015 16:00
+	* TODO ACABADO
+
+
+- PERSONAJE
+	* Atributos básicos (Vida, Velocidad de movimiento, Daño de ataque, Moneda) - JMC H1
+	* Movimiento respecto a la cámara - JMC H1
+	* Ataque básico (Cuchillo a distancia)
+	* Ataque básico (Sarténazo en la cara)
+	* Muerte (0 de vida)
+	* Resurrección a los 2 segundos
+
+
+- CAMARA
+	* SIEMPRE Detrás del personaje - JMC H1
+	* Puntero con raycast
+
+
+- ENEMIGOS
+	* Atributos básicos (Vida, Velocidad de movimiento, Daño de ataque, WayPoint, Puntuación, Moneda) - JMC H1
+	- IA 
+		* Movimiento - ISL H1
+		* Comportamiento
+	* Malla de navegación - ISL H1
+	* Random para elegir que enemigo ataca y cual solo corre
+	* Generación de oleadas (De 5 en 5, intervalo de 1 segundo)
+	* Aumento de oleada = +2 enemigos
+	* Llegada a meta
+	- ENEMIGO 1
+		* Atributos (Vida 2, Velocidad 2, Daño 2) - ISL H1
+		* Ataque básico (melé)
+	- ENEMIGO 2
+		* Atributos (Vida 1, Velocidad 3, Daño 1)
+		* Ataque básico (distancia)
+	- ENEMIGO 3
+		* Atributos (Vida 3, Velocidad 1, Daño 3)
+		* Ataque básico (melé)
+
+
+- ENTORNO
+	* WayPoints (Inicial, intermedios, Final)
+	* Estado juego (Ronda, Vidas, Puntuación)
+
+
+- TRAMPAS
+ 	* Atributos (Usos, Daño, CD, Moneda, Estado alterado) - JTM H1
+	* Miel en el suelo (Ralentiza) - JTM H1
+	* Fogón en el suelo  (Daño) - JTM H1
+	* Cucharón de pared (Empuja y poco daño)
+	* Bombona explosiva (Daño masivo)
+
+
+- INTERFAZ
+	* Barra de progreso
+	* Puntuación
+	* Moneda
+	* Vidas
+	* Trampas
+	* Barra de vida
+
+- ARTE
+	* Bocetos - ECA H1
+	* Cocina
+	* Enemigo 1 -> Salchicha medio doblada con pies y brazos
+	* Enemigo 2 -> Enemigo 1 montado en salchica rara
+	* Enemigo 3 -> Paquete de Oscar Mayer
+	* Cocinero
+	* Cuchillo
+	* Sartén
+	* Trampas
+	* Interfaz
+	
