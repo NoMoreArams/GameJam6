@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 491544}
   - 114: {fileID: 11448418}
   m_Layer: 0
-  m_Name: pr_InitialPoint
+  m_Name: pr_InitialWayPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

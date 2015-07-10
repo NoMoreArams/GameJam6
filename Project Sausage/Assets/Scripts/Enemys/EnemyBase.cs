@@ -6,13 +6,14 @@ public class EnemyBase : MonoBehaviour {
     private static int enemyNumber = 0;
     private EnemyMovement enemyMovement;
 
-    void Awake()
+    protected virtual void Awake()
     {
-        enemyMovement = GetComponent<EnemyMovement>();
+        enemyMovement = GetComponent<EnemyMovement>(); 
     }
 
     // Use this for initialization
-	void Start () {
+    protected virtual void Start()
+    {
         gameObject.name = "EnemyType0_" + enemyNumber;
         enemyNumber++;
 	}

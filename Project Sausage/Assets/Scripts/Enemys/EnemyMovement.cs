@@ -20,20 +20,20 @@ public class EnemyMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float w_distance = Vector3.Distance(transform.position, wayPointToMove.transform.position);
-        if (w_distance < rank && wayPointToMove.endWayPoint)
+        if (!InRank())
         {
-            DestroyImmediate(gameObject);
+            enemyAgent.SetDestination(wayPointToMove.transform.position);
         }
         else
         {
-            if (w_distance > rank)
+            if (!wayPointToMove.endWayPoint)
             {
-                enemyAgent.SetDestination(wayPointToMove.transform.position);
+                wayPointToMove = wayPointToMove.nextWayPoint;
+                wayPointToMove.ChangeNextWayPoint();
             }
             else
             {
-                wayPointToMove = wayPointToMove.nextWayPoint;
+                DestroyImmediate(gameObject);
             }
         }
     }
@@ -46,5 +46,11 @@ public class EnemyMovement : MonoBehaviour {
     public void SetWayPointToMove(WayPoint pe_wayPointToMove)
     {
         wayPointToMove = pe_wayPointToMove;
+    }
+
+    bool InRank()
+    {
+        float w_distance = Vector3.Distance(transform.position, wayPointToMove.transform.position);
+        return w_distance < rank;
     }
 }
