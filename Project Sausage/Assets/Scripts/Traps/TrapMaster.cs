@@ -3,19 +3,21 @@ using System.Collections;
 
 public class TrapMaster : MonoBehaviour {
 
+	protected TrapAttributtes tAttr;
+
 	void Start () {
-	
+		tAttr = GetComponent<TrapAttributtes> ();
 	}
-
-	void Update () {
 	
-	}
-
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "Enemy") {
-			Debug.Log("Enemigo Dañado");
+			if (tAttr.CanUse()) {
+				Execute(other.gameObject);
+			}
 		}
 	}
 
+	virtual
+	public void Execute (GameObject other) {}
 
 }
