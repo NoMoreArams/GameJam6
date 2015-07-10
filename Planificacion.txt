@@ -58,7 +58,7 @@ IMPORTANTE
 
 
 - ENTORNO
-	* WayPoints (Inicial, intermedios, Final)
+	* WayPoints (Inicial, intermedios, Final) - ISL H1
 	* Estado juego (Ronda, Vidas, Puntuación)
 
 
