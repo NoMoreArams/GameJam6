@@ -33,7 +33,7 @@ IMPORTANTE
 
 - CAMARA
 	* SIEMPRE Detrás del personaje - JMC H1
-	* Puntero con raycast
+	* Puntero con raycast - JTM H1
 
 
 - ENEMIGOS

@@ -6,7 +6,9 @@ public class HoneyDebuff : MonoBehaviour {
 	public int slow = 10;
 	public float duration = 2f;
 
-	public void Start () {
+	public void Execute (int slow, float duration) {
+		this.slow = slow;
+		this.duration = duration;
 		// BAJAR LA VELOCIDAD
 		Debug.Log ("RALENTIZADO");
 		StartCoroutine ("selfDestroy");

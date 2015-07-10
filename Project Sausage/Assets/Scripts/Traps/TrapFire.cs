@@ -5,6 +5,7 @@ public class TrapFire : TrapMaster {
 	
 	override
 	public void Execute (GameObject other) {
-		other.AddComponent<DamageDebuff> ();
+		DamageDebuff buff = other.AddComponent<DamageDebuff> ();
+		buff.Execute (tAttr.damage);
 	}
 }
