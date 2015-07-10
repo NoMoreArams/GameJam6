@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491544}
-  - 114: {fileID: 11448418}
+  - 114: {fileID: 11487088}
   m_Layer: 0
   m_Name: pr_InitialWayPoint
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11448418
+--- !u!114 &11487088
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -36,11 +36,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 139110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0614c990262646f9a01b2aef843f24a, type: 3}
+  m_Script: {fileID: 11500000, guid: 32dfb9affc5493c4190d02805d511a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: []
-  initialsWayPoints: []
+  enemy:
+  - {fileID: 172488, guid: 054b0eab8be503c4c9de4b470e9c0b60, type: 2}
+  initialsWayPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -49,6 +53,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: enemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: initialsWayPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -56,6 +68,10 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: enemy.Array.data[0]
+      value: 
+      objectReference: {fileID: 172488, guid: 054b0eab8be503c4c9de4b470e9c0b60, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139110}
