@@ -1,22 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyType1 : EnemyBase {
+public class EnemyType2 : EnemyBase
+{
 
     protected override void Awake()
     {
         base.Awake();
     }
-	// Use this for initialization
+    // Use this for initialization
     protected override void Start()
     {
-        nameType = "EnemyType1_";
+        nameType = "EnemyType2_";
         base.Start();
         enemyAgent.speed = enemyStats.Speed;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
