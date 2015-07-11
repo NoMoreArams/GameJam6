@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtArm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452842}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtFoot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466722}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effIndex_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473760}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effArm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 487786}
   - 137: {fileID: 13742322}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Chef_Low_Delantal_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,8 @@ GameObject:
   - 114: {fileID: 11489530}
   - 114: {fileID: 11419722}
   - 114: {fileID: 11408290}
-  m_Layer: 0
+  - 114: {fileID: 11458614}
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -121,7 +122,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnShoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +137,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456868}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +152,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446514}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effPinky_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +167,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431940}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +182,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461018}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effShoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +197,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468692}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effThumb_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +212,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453998}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtLeg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +227,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477138}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +242,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403802}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effLeg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +257,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425080}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +272,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426198}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtShoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +287,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434166}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnLeg_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +302,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455686}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effMiddle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +317,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484962}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +332,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450828}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +347,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477738}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtIndex_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +363,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450856}
   - 137: {fileID: 13763302}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Chef_Low_Gorro_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +378,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtFoot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +393,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498508}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effFoot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +408,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410452}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +423,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475706}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +438,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426870}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effRing_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +453,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416120}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effPinky_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +468,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430608}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effHand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +483,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404710}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +499,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 464728}
   - 137: {fileID: 13733034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Chef_Low_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +514,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426442}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtLeg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +529,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460942}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnArm_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +544,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495656}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtHand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +559,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444156}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnFoot_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +574,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410352}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +589,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448600}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +604,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnFoot_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +619,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478068}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effLeg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +634,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405658}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtMiddle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +649,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456494}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +664,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433198}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtHand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +679,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtIndex_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +694,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446732}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effMiddle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +709,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402056}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:mdl_Chef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +724,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499048}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +739,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469674}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +754,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456004}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,7 +769,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460876}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +784,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431914}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effArm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +799,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477372}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rt_Ring_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,7 +814,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451980}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnFoot_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +829,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463676}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +844,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,7 +859,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 474314}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +880,7 @@ GameObject:
   - 81: {fileID: 8183356}
   - 114: {fileID: 11403928}
   - 114: {fileID: 11430646}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -894,7 +895,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402212}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -909,7 +910,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427180}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtShoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +925,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482704}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,7 +940,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnHand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -954,7 +955,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437838}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnFoot_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +970,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490226}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +985,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488158}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:Ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,7 +1000,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426898}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1014,7 +1015,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444702}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1030,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487506}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnShoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1044,7 +1045,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484084}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnArm_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1060,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419400}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effShoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1074,7 +1075,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444242}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effHand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1090,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476486}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1104,7 +1105,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: KnifeThrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1120,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470714}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rt_Ring_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1135,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416130}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effRing_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1150,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402758}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnLeg_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1165,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494900}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1180,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415838}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1195,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482662}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1210,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413886}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtArm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1224,7 +1225,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400708}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1240,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440110}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnLeg_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,7 +1255,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472286}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1270,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410976}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1285,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497148}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1300,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448778}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effIndex_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1317,9 +1318,11 @@ GameObject:
   - 33: {fileID: 3306288}
   - 23: {fileID: 2395550}
   - 95: {fileID: 9563196}
-  m_Layer: 0
+  - 64: {fileID: 6461648}
+  - 114: {fileID: 11492708}
+  m_Layer: 2
   m_Name: Sarten
-  m_TagString: Untagged
+  m_TagString: Sarten
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1332,7 +1335,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 435530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnHand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1350,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415858}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnArm_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1362,7 +1365,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486856}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtThumb_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1377,7 +1380,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475976}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effFoot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1396,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 493966}
   - 137: {fileID: 13731810}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Chef_Low_Panyo_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1411,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437214}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1426,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnArm_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1438,7 +1441,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 481138}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:effThumb_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1456,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 465586}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1468,7 +1471,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499580}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnRing_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1483,7 +1486,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472976}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnThumb_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1498,7 +1501,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,7 +1516,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427724}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnPinky_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1531,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403038}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtPinky_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1546,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418492}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnLeg_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1561,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482062}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtThumb_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1573,7 +1576,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1588,7 +1591,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420614}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtMiddle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1603,7 +1606,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468066}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:rtPinky_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1618,7 +1621,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489448}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnMiddle_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,7 +1636,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406870}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: mdl_Chef:bnIndex_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2424,8 +2427,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184408}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: -.00200000009, y: .00200000009, z: -.0489999987}
+  m_LocalRotation: {x: .0453353748, y: .967872143, z: -.136819705, w: .206030712}
+  m_LocalPosition: {x: .00999999978, y: .00499999989, z: -.0189999994}
   m_LocalScale: {x: .328947335, y: .328947246, z: .328947335}
   m_Children: []
   m_Father: {fileID: 430608}
@@ -3123,6 +3126,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!64 &6461648
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: 8c6917a45937a4015b631c530c4904d6, type: 3}
 --- !u!81 &8183356
 AudioListener:
   m_ObjectHideFlags: 1
@@ -3229,6 +3244,20 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: daf9781cad112c75d0008dfa8d76c639, type: 3}
   textureRamp: {fileID: 0}
   rampOffset: .100000001
+--- !u!114 &11458614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a7713a0c899a4488331ce26d46b4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KnifeMelee: {fileID: 184408}
+  cooldown: 3
+  Esperar: .875
 --- !u!114 &11462902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3253,9 +3282,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1000
-  inclinacion: .300000012
+  inclinacion: .100000001
   thrower: {fileID: 425160}
   knife: {fileID: 171526, guid: 417eeb9e8f55c4766b51ced1505947bf, type: 2}
+  cooldown: 1
+  Esperar: .777777791
+--- !u!114 &11492708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2357eaed5cac0134993e69fbf5139f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Atacando: 0
+  Golpes: 3
+  Player: {fileID: 108092}
 --- !u!124 &12482982
 Behaviour:
   m_ObjectHideFlags: 1
