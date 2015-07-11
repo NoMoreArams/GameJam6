@@ -271,12 +271,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 136622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa576a08431a0d84fa20c4214f2be16f, type: 3}
+  m_Script: {fileID: 11500000, guid: c5420cd76a4ac401ca4f6b8dec056b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camara: {fileID: 164272}
-  max_ry: .200000003
-  min_ry: -.100000001
+  camara: {fileID: 0}
+  max_ry: 0
+  min_ry: 0
 --- !u!114 &11486912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,13 +285,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 136622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb60edb56b793f444917e67976ec54f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 27076ab09b17d4f6bb75eee853289e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 5
-  Speed: 2
-  Damage: 2
-  Coins: 10
+  Health: 0
+  Speed: 0
+  Damage: 0
+  Coins: 0
 --- !u!124 &12463450
 Behaviour:
   m_ObjectHideFlags: 1
