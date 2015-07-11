@@ -7,10 +7,20 @@ public class EnemyStats : PlayerStats {
 	public int Score;
 
     private NavMeshAgent enemyAgent;
+    private PlayerStats playerStats;
 
     void Awake()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
+        GameObject go_player = GameObject.FindGameObjectWithTag("Player");
+        if (go_player != null)
+        {
+            playerStats = go_player.GetComponent<PlayerStats>();
+        }
+        else
+        {
+            Debug.LogError("Error. Player don't find.");
+        }
     }
 
 	// Use this for initialization
@@ -23,4 +33,9 @@ public class EnemyStats : PlayerStats {
 	void Update () {
 	
 	}
+
+    public void GetRewards()
+    {
+        playerStats.Coins += Coins;
+    }
 }

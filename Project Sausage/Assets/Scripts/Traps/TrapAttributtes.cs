@@ -5,7 +5,8 @@ public class TrapAttributtes : MonoBehaviour {
 	public int hits;
 	public int damage;
 	public int coins;
-	public int debuff;
+
+	public float debuff;
 	public float cooldown;
 	private float time2Attack;	
 
