@@ -24,6 +24,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &128372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434068}
+  m_Layer: 0
+  m_Name: Thrower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &140286
 GameObject:
   m_ObjectHideFlags: 0
@@ -52,8 +67,21 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: .699999988, y: .699999988, z: .699999988}
   m_Children:
+  - {fileID: 434068}
   - {fileID: 444672}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &434068
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .363999963, z: .727999985}
+  m_LocalScale: {x: .536863029, y: .536863029, z: .536863029}
+  m_Children: []
+  m_Father: {fileID: 432426}
   m_RootOrder: 0
 --- !u!4 &444672
 Transform:
@@ -66,7 +94,7 @@ Transform:
   m_LocalScale: {x: .536863029, y: .536863029, z: .536863029}
   m_Children: []
   m_Father: {fileID: 432426}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!23 &2365868
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -158,11 +186,13 @@ MonoBehaviour:
   actualState: 0
   targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 20
+  percentAttacker: 100
   rankAttacker: 10
   rankAttack: 7
   ataco: 0
   distancia: 0
+  skills:
+  - {fileID: 144410, guid: 9e1bb0a1a01529e46b61341fcfae26b2, type: 2}
 --- !u!114 &11404176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,6 +341,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: percentAttacker
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
