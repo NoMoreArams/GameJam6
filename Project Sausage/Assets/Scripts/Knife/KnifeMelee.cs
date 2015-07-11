@@ -41,10 +41,11 @@ public class KnifeMelee : MonoBehaviour {
 	{
 		// Finalizar
 		Atacando = false;
+		enemigos = new ArrayList ();
 	}
 
 	// Colisionar
-	void OnTriggerEnter(Collider other)
+	void OnTriggerStay(Collider other)
 	{
 		// Si esta atacando y no se han dado el maximo de golpes
 		if (Atacando && _golpes < Golpes)
