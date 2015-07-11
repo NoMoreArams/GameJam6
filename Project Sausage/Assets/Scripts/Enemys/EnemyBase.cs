@@ -25,6 +25,7 @@ public class EnemyBase : MonoBehaviour {
     public float rankAttack = 7.0f;
     public bool ataco = false;
     public float distancia;
+    public bool loVeo;
 
     protected string nameType;
 
@@ -60,7 +61,11 @@ public class EnemyBase : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        
+        /*if (isAttacker)
+        {
+            distancia = Vector3.Distance(transform.position, targetPlayer.transform.position);
+            
+        }*/
 	}
 
     protected virtual void Movement()
@@ -69,7 +74,7 @@ public class EnemyBase : MonoBehaviour {
         {
             actualState = EnemyStates.movenmentToAttack;
             //enemyMovement.StopMovenment();
-            enemyMovement.MoveToTarget(targetPlayer.transform.position);
+            enemyMovement.MoveToTarget(targetPlayer.transform.position, targetPlayer);
         }
     }
 
@@ -130,12 +135,15 @@ public class EnemyBase : MonoBehaviour {
 
     bool CanISee()
     {
+        return true;
         if (!isAttacker)
             return false;
 
         RaycastHit hit;
-        Vector3 direccion = targetPlayer.transform.position - transform.position;
-        float dist = Vector3.Distance(targetPlayer.transform.position, transform.position);
+        Vector3 w_targetAux = targetPlayer.transform.position;
+        w_targetAux.y = transform.position.y;
+        Vector3 direccion = w_targetAux - transform.position;
+        float dist = Vector3.Distance(w_targetAux, transform.position)+2;
         Ray lookRay = new Ray(transform.position, direccion);
 
         if (Physics.Raycast(lookRay, out hit, dist))

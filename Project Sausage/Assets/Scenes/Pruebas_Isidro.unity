@@ -384,6 +384,7 @@ RectTransform:
   - {fileID: 1327205232}
   - {fileID: 863598124}
   - {fileID: 1738392818}
+  - {fileID: 832875439}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -1312,6 +1313,93 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 419112, guid: c95fb04c918f040d6bef9367d49cf21c, type: 2}
   m_PrefabInternal: {fileID: 746024871}
+--- !u!1001 &832875438
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 165734305}
+    m_Modifications:
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 73.9000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 15.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_Pivot.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+      propertyPath: m_Pivot.y
+      value: .5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9299a519005edba439c724f9659ebc8b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &832875439 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22441014, guid: 9299a519005edba439c724f9659ebc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 832875438}
 --- !u!1001 &837078530
 Prefab:
   m_ObjectHideFlags: 0
@@ -1922,6 +2010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffb565d8aa8242d78c88cc56e4f07ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
   time: 5
   nEnemies: 5
   tEnemies: 1.5
@@ -1930,6 +2019,7 @@ MonoBehaviour:
   scoreText: {fileID: 1509244067}
   time2StartText: {fileID: 863598123}
   coinsText: {fileID: 664743223}
+  hpbar: {fileID: 0}
 --- !u!4 &1320316869
 Transform:
   m_ObjectHideFlags: 0
