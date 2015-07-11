@@ -1,17 +1,24 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Knife\Knife.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Stats\EnemyStats.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\PlayerRangeAttack.cs" Line="48" Column="31" />
-      <File FileName="Assets\Scripts\Knife\Knife.cs" Line="37" Column="15" />
-      <File FileName="Assets\Scripts\Stats\PlayerStats.cs" Line="25" Column="19" />
-      <File FileName="Assets\Scripts\Player\PlayerDie.cs" Line="103" Column="57" />
-      <File FileName="Assets\Scripts\Enemys\EnemyMovement.cs" Line="71" Column="1" />
-      <File FileName="Assets\Scripts\Enemys\EnemyGeneration.cs" Line="20" Column="32" />
+      <File FileName="Assets\Scripts\Player\PlayerMeleeAttack.cs" Line="33" Column="24" />
+      <File FileName="Assets\Scripts\Player\PlayerRangeAttack.cs" Line="29" Column="18" />
+      <File FileName="Assets\Scripts\Knife\Knife.cs" Line="36" Column="16" />
+      <File FileName="Assets\Scripts\Stats\PlayerStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerDie.cs" Line="82" Column="46" />
+      <File FileName="Assets\Scripts\Enemys\EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemys\EnemyGeneration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Knife\KnifeMelee.cs" Line="22" Column="19" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="35" Column="5" />
+      <File FileName="Assets\Scripts\Stats\EnemyStats.cs" Line="28" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="D:\GameJam6\GameJam6\Project Sausage\Assets\Scripts\Knife\KnifeMelee.cs" line="34" />
+      <Breakpoint file="D:\GameJam6\GameJam6\Project Sausage\Assets\Scripts\Knife\KnifeMelee.cs" line="57" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

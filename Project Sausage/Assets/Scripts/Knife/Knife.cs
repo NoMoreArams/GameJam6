@@ -6,20 +6,34 @@ public class Knife : MonoBehaviour {
 	// Velocidad de rotacion
 	public float RSpeed;
 
-	// Daño del cuchillo
-	public int damage;
+	// Player
+	public GameObject Player;
+
+	// Tiempo de vida del cuchillo
+	public float LiveTime;
+
+	// Tiempos
+	private float tiempo = 0;
 
 	// Use this for initialization
 	void Start ()
 	{
-
+		if (Player == null)
+			Player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		// Incrementar tiempo
+		tiempo += Time.deltaTime;
+
 		// Rotacion
 		transform.Rotate(Vector3.left * RSpeed);
+
+		// Comprobar tiempo de vida del cuchillo
+		if (tiempo >= LiveTime)
+			Destruir ();
 	}
 
 	// Colisionar
@@ -30,7 +44,7 @@ public class Knife : MonoBehaviour {
 		{
 			//other.gameObject.GetComponent<EnemyStats>().ReceiveDamage(1);
 			DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
-			db.Execute(damage);
+			db.Execute(Player.GetComponent<PlayerStats>().Damage - 1);
 		}
 
 		// Destruir cuchillo
