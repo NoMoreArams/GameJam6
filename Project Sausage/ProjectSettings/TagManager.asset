@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Trap
   - Obstacle
+  - Sarten
   layers:
   - Default
   - TransparentFX
