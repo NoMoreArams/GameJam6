@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemys/EnemyMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Stats\PlayerStats.cs">
     <Files>
-      <File FileName="Assets/Scripts/Traps/TrapAttributtes.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/Traps/TrapMaster.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Enemys/EnemyMovement.cs" Line="10" Column="27" />
+      <File FileName="Assets\Scripts\Stats\PlayerStats.cs" Line="46" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
