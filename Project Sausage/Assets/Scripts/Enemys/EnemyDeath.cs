@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyDeath : MonoBehaviour {
 
     private EnemyStats enemyStats;
+
     void Awake()
     {
         enemyStats = GetComponent<EnemyStats>();
@@ -15,8 +16,10 @@ public class EnemyDeath : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (enemyStats != null && enemyStats.Health <= 0)
+        if (enemyStats != null && enemyStats.Alive)
         {
+            Debug.Log("Salud --> " + enemyStats.Health);
+            enemyStats.GetRewards();
             DestroyImmediate(gameObject);
         }
 	}
