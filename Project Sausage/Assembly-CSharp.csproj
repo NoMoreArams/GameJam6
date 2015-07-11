@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Enemys\EnemyType1.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyType2.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyType3.cs" />
+     <Compile Include="Assets\Scripts\Enemys\Skills\HitController.cs" />
      <Compile Include="Assets\Scripts\Enemys\Skills\ShootController.cs" />
      <Compile Include="Assets\Scripts\Environment\WayPoint.cs" />
      <Compile Include="Assets\Scripts\GlobalState.cs" />

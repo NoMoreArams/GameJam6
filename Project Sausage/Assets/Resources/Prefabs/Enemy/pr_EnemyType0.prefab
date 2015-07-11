@@ -18,6 +18,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &149312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 474502}
+  m_Layer: 0
+  m_Name: Thrower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &172488
 GameObject:
   m_ObjectHideFlags: 0
@@ -53,7 +68,7 @@ Transform:
   m_LocalScale: {x: .536863029, y: .536863029, z: .536863029}
   m_Children: []
   m_Father: {fileID: 474208}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &474208
 Transform:
   m_ObjectHideFlags: 1
@@ -64,8 +79,21 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: .699999988, y: .699999988, z: .699999988}
   m_Children:
+  - {fileID: 474502}
   - {fileID: 471050}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &474502
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.51078665, y: .0782857612, z: .609629571}
+  m_LocalScale: {x: .536863029, y: .536863029, z: .536863029}
+  m_Children: []
+  m_Father: {fileID: 474208}
   m_RootOrder: 0
 --- !u!23 &2322950
 MeshRenderer:
@@ -316,6 +344,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rankAttack
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
