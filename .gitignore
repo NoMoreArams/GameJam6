@@ -49,6 +49,7 @@ Thumbs.db
 **/*.blend1.*
 
 # Caca folder
+
 cacaForIgnore/
 Project Sausage/Assets/UnityVS/
 Project Sausage/Assets/UnityVS.meta
