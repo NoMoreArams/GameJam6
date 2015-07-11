@@ -25,4 +25,14 @@ public class EnemyType0 : EnemyBase
     {
 
     }
+
+    protected override void Movement()
+    {
+        base.Movement();
+    }
+
+    protected override void Attack()
+    {
+        base.Attack();
+    }
 }

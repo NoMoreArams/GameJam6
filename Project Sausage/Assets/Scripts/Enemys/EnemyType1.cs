@@ -24,4 +24,14 @@ public class EnemyType1 : EnemyBase {
 	void Update () {
 	
 	}
+
+    protected override void Movement()
+    {
+        base.Movement();
+    }
+
+    protected override void Attack()
+    {
+        base.Attack();
+    }
 }
