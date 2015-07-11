@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Enemys\EnemyType2.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyType3.cs" />
      <Compile Include="Assets\Scripts\Environment\WayPoint.cs" />
+     <Compile Include="Assets\Scripts\Knife\Knife.cs" />
      <Compile Include="Assets\Scripts\Map\GroundIndividual.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_LightIntensityFade.cs" />

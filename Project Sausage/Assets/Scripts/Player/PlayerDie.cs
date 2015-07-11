@@ -61,6 +61,9 @@ public class PlayerDie : MonoBehaviour {
 		// Deshabilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = false;
 
+		// Deshabilitar collider
+		gameObject.GetComponent<BoxCollider> ().enabled = false;
+
 		// Habilitar efectos
 		camara.GetComponent<Blur> ().enabled = true;
 		camara.GetComponent<Grayscale> ().enabled = true;
@@ -95,6 +98,9 @@ public class PlayerDie : MonoBehaviour {
 		// Habilitar efectos
 		camara.GetComponent<Blur> ().enabled = false;
 		camara.GetComponent<Grayscale> ().enabled = false;
+
+		// Habilitar collider
+		gameObject.GetComponent<BoxCollider> ().enabled = true;
 
 		// Habilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = true;

@@ -5,9 +5,7 @@ public class PlayerRangeAttack : MonoBehaviour {
 
 	// Fuerza con la que se lanza el cuchillo
 	public float force;
-
-	// Velocidad del cuchillo
-	public float speed;
+	public float inclinacion;
 
 	// Thrower
 	public Transform thrower;
@@ -34,13 +32,21 @@ public class PlayerRangeAttack : MonoBehaviour {
 	// Lanzar cuchillo
 	void ThrowKnife ()
 	{
-		// Calcular rotacion inicial
-		float rz_ini = Random.Range (0f, 60f);
+		// Random
+		float r = Random.Range (0.0f, 25.0f);
+
+		// Rotacion
 		Quaternion rot = thrower.rotation;
-		rot.x += rz_ini;
+		rot.x = r;
 
 		// Instanciar cuchillo
-		GameObject knifeClone = (GameObject)Instantiate(knife, thrower.position, knife.transform.rotation);
-		knifeClone.transform.SetParent (thrower);
+		GameObject knifeClone = (GameObject)Instantiate(knife, thrower.position, rot);
+		Physics.IgnoreCollision(knifeClone.GetComponent<Collider>(), GetComponent<Collider>());
+
+		// Fuerza
+		Vector3 lanzamiento = thrower.forward;
+		lanzamiento.y = inclinacion;
+
+		knifeClone.GetComponent<Rigidbody> ().AddForce (lanzamiento * force);
 	}
 }

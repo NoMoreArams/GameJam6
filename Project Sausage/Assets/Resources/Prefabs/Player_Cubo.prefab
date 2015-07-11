@@ -11,13 +11,11 @@ GameObject:
   - 33: {fileID: 3328874}
   - 65: {fileID: 6533926}
   - 23: {fileID: 2309752}
-  - 136: {fileID: 13668206}
   - 54: {fileID: 5418998}
   - 95: {fileID: 9572592}
   - 114: {fileID: 11402870}
   - 114: {fileID: 11413140}
   - 114: {fileID: 11423582}
-  - 114: {fileID: 11483938}
   - 114: {fileID: 11426342}
   m_Layer: 0
   m_Name: Player_Cubo
@@ -239,7 +237,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 108
   m_CollisionDetection: 0
 --- !u!65 &6533926
 BoxCollider:
@@ -349,10 +347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345a4bc9e4fcbf0468d7d758bd1ce489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 20
-  speed: 10
+  force: 1000
+  inclinacion: .300000012
   thrower: {fileID: 481518}
-  knife: {fileID: 169100, guid: 38fcc2810962d3944bec66f63d6bb4cc, type: 2}
+  knife: {fileID: 171526, guid: 417eeb9e8f55c4766b51ced1505947bf, type: 2}
 --- !u!114 &11433428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,21 +365,6 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: daf9781cad112c75d0008dfa8d76c639, type: 3}
   textureRamp: {fileID: 0}
   rampOffset: .100000001
---- !u!114 &11483938
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345a4bc9e4fcbf0468d7d758bd1ce489, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 20
-  speed: 10
-  thrower: {fileID: 0}
-  knife: {fileID: 0}
 --- !u!114 &11486982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,19 +386,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165276}
   m_Enabled: 1
---- !u!136 &13668206
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -426,7 +396,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: knife
       value: 
-      objectReference: {fileID: 169100, guid: 38fcc2810962d3944bec66f63d6bb4cc, type: 2}
+      objectReference: {fileID: 171526, guid: 417eeb9e8f55c4766b51ced1505947bf, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -438,6 +408,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
       value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: force
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: inclinacion
+      value: .300000012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
