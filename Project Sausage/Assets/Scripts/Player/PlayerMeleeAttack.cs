@@ -32,8 +32,6 @@ public class PlayerMeleeAttack : MonoBehaviour {
 		// DEBUG -- Esperar
 		StartCoroutine ("Wait");
 
-		// Terminar de atacar
-		KnifeMelee.GetComponent<KnifeMelee> ().EndAttack ();
 	}
 
 	// DEBUG: tiempo
@@ -41,5 +39,8 @@ public class PlayerMeleeAttack : MonoBehaviour {
 	{
 		// Esperar
 		yield return new WaitForSeconds (Esperar);
+		
+		// Terminar de atacar
+		KnifeMelee.GetComponent<KnifeMelee> ().EndAttack ();
 	}
 }

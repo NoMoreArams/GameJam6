@@ -45,6 +45,7 @@ public class Knife : MonoBehaviour {
 			//other.gameObject.GetComponent<EnemyStats>().ReceiveDamage(1);
 			DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
 			db.Execute(Player.GetComponent<PlayerStats>().Damage - 1);
+
 		}
 
 		// Destruir cuchillo
