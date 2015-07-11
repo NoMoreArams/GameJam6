@@ -11,7 +11,9 @@ public class ExplosionHandler : MonoBehaviour {
 	}
 
 	public IEnumerator Die () {
-		yield return new WaitForSeconds (duration);
+		yield return new WaitForSeconds (duration/2);
+		Destroy (gameObject.GetComponent<Collider> ());
+		yield return new WaitForSeconds (duration/2);
 		Destroy (gameObject);
 	}
 

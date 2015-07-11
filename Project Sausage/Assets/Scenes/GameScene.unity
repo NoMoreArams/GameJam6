@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 5
   nEnemies: 5
-  tEnemies: .5
+  tEnemies: 1
   gameStarted: 0
   scoreText: {fileID: 1280707922}
   time2StartText: {fileID: 1650409495}
@@ -4390,7 +4390,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.90625286
+      value: -9.07699966
       objectReference: {fileID: 0}
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalPosition.y
