@@ -13,11 +13,33 @@
 /*.pidb
 /*.booproj
 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+/*.pidb
+/*.sln*
+
+
+
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
 
-#Apple
-.DS_Store
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+Assets/UnityVS/
+Game_Data/
+
+Sausage_Data/
+*.exe
 
 #Windows
 Thumbs.db
