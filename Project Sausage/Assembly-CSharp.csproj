@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GlobalState.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyBase.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyDeath.cs" />
      <Compile Include="Assets\Scripts\Enemys\EnemyGeneration.cs" />
@@ -59,7 +60,9 @@
      <Compile Include="Assets\Scripts\Particles\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_LightIntensityFade.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerDie.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMeleeAttack.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerRangeAttack.cs" />
      <Compile Include="Assets\Scripts\Stats\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\Stats\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Traps\DamageDebuff.cs" />
