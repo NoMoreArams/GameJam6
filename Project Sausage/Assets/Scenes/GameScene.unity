@@ -3319,7 +3319,7 @@ Prefab:
     - target: {fileID: 11407372, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: camara
       value: 
-      objectReference: {fileID: 1842040728}
+      objectReference: {fileID: 1760252256}
     - target: {fileID: 11407372, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: max_ry
       value: .200000003
@@ -3327,6 +3327,18 @@ Prefab:
     - target: {fileID: 11407372, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: min_ry
       value: -.100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 183914, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 164272, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 136622, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13689238, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
@@ -3585,6 +3597,10 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: 6c2064b1511924f668233614d88b6a8f, type: 2}
   selected: {fileID: 2100000, guid: fd1b3258e8d2d4f3daefd1616e8473ed, type: 2}
   trapped: 0
+--- !u!1 &1760252256 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 164272, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
+  m_PrefabInternal: {fileID: 1618206437}
 --- !u!1 &1761044229 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100038, guid: be158488743124e60bb95da39c0ea464, type: 3}
@@ -3718,91 +3734,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
---- !u!1 &1842040728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1842040733}
-  - 20: {fileID: 1842040732}
-  - 92: {fileID: 1842040731}
-  - 124: {fileID: 1842040730}
-  - 81: {fileID: 1842040729}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1842040729
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842040728}
-  m_Enabled: 1
---- !u!124 &1842040730
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842040728}
-  m_Enabled: 1
---- !u!92 &1842040731
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842040728}
-  m_Enabled: 1
---- !u!20 &1842040732
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842040728}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: .300000012
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
---- !u!4 &1842040733
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842040728}
-  m_LocalRotation: {x: .301595956, y: 0, z: 0, w: .953435838}
-  m_LocalPosition: {x: 0, y: 1.88999999, z: -1.72000003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1917657094}
-  m_RootOrder: 2
 --- !u!1 &1914194239 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100028, guid: be158488743124e60bb95da39c0ea464, type: 3}
@@ -3833,10 +3764,6 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: 6c2064b1511924f668233614d88b6a8f, type: 2}
   selected: {fileID: 2100000, guid: fd1b3258e8d2d4f3daefd1616e8473ed, type: 2}
   trapped: 0
---- !u!4 &1917657094 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
-  m_PrefabInternal: {fileID: 1618206437}
 --- !u!1 &1954149449 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100108, guid: be158488743124e60bb95da39c0ea464, type: 3}
