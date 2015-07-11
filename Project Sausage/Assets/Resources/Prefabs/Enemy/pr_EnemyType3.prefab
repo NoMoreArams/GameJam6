@@ -246,7 +246,7 @@ MonoBehaviour:
   actualState: 0
   targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 100
+  percentAttacker: 40
   rankAttacker: 10
   rankAttack: 1
   ataco: 0
@@ -374,7 +374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: percentAttacker
-      value: 100
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
