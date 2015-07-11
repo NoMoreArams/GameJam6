@@ -98,7 +98,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 00c1b58acfb3d934eba62c7ccbc1ee77, type: 2}
+  - {fileID: 2100000, guid: ee8151c43ce664216b072c3ef064b884, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 172488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7ca7206e3744b489dd6aed58ff7ad3, type: 3}
+  m_Script: {fileID: 11500000, guid: 42a2352e2699e4694b4cae8bb3870d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11478776
@@ -145,11 +145,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df79f5199a8d2464f85493f554879e81, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a257c4f305a4ab888c44e15f2bf7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wayPointToMove: {fileID: 0}
-  rank: 1
+  rank: 1.5
   distance: 0
 --- !u!135 &13578732
 SphereCollider:
@@ -205,8 +205,12 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: rank
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee8151c43ce664216b072c3ef064b884, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172488}
