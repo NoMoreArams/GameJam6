@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Trap
   - Obstacle
+  - CanvasEnemys
   layers:
   - Default
   - TransparentFX

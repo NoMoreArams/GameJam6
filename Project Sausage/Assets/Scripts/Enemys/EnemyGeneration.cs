@@ -17,7 +17,7 @@ public class EnemyGeneration : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space) && enemy.Length > 0)
         {
-            StartWave(5, 1.5f);
+            StartWave(1, 1.5f);
         }
 	}
 
