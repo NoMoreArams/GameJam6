@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &145060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422640}
+  - 33: {fileID: 3387642}
+  - 23: {fileID: 2305024}
+  - 95: {fileID: 9550486}
+  m_Layer: 0
+  m_Name: Honey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &165366
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,9 +28,9 @@ GameObject:
   - 4: {fileID: 410232}
   - 33: {fileID: 3327574}
   - 23: {fileID: 2332390}
-  - 65: {fileID: 6590632}
   - 114: {fileID: 11475022}
   - 114: {fileID: 11436392}
+  - 135: {fileID: 13515524}
   m_Layer: 0
   m_Name: TrapHoney
   m_TagString: Trap
@@ -27,11 +45,48 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.71962929, y: 1.11022302e-16, z: 11.9438419}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
-  m_Children: []
+  m_Children:
+  - {fileID: 422640}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &422640
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145060}
+  m_LocalRotation: {x: -4.32977997e-17, y: .707106709, z: .707106829, w: -4.32978063e-17}
+  m_LocalPosition: {x: -.129999995, y: -.0194979999, z: -.00671099965}
+  m_LocalScale: {x: 1.50157952, y: 1.50157833, z: .361384958}
+  m_Children: []
+  m_Father: {fileID: 410232}
+  m_RootOrder: 0
+--- !u!23 &2305024
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145060}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: a972cc1c965a849308d130ed4bc4b731, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2332390
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -63,18 +118,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165366}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6590632
-BoxCollider:
+--- !u!33 &3387642
+MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_GameObject: {fileID: 145060}
+  m_Mesh: {fileID: 4300000, guid: 54cf2e6f83b244b13b5e4b1da06000c1, type: 3}
+--- !u!95 &9550486
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145060}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: .400000006, z: 10}
-  m_Center: {x: 0, y: 2.02999997, z: 0}
+  m_Avatar: {fileID: 9000000, guid: 54cf2e6f83b244b13b5e4b1da06000c1, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11436392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed2c130b4a7e4e5b9fabfb8911d2091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gi: {fileID: 0}
 --- !u!114 &11475022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +170,18 @@ MonoBehaviour:
   coins: 0
   debuff: 50
   cooldown: 0
+--- !u!135 &13515524
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

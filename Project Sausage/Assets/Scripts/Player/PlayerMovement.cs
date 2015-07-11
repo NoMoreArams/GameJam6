@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour {
 		// Recoger movimiento
 		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
+		GetComponent<Animator> ().SetFloat ("vertical", v);
 		rx = Input.GetAxis ("Mouse X");
 		ry = Input.GetAxis ("Mouse Y");
 	}

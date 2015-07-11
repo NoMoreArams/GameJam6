@@ -6,6 +6,7 @@ public class SelectTrap : MonoBehaviour {
 
 	public Image[] skills;
 	public GameObject[] prefabSkills;
+	public int[] skillsCost;
 
 	public int selected;
 
@@ -21,21 +22,30 @@ public class SelectTrap : MonoBehaviour {
 			if (selected < skills.Length -1) {
 				skills[selected].color = Color.white;
 				selected++;
-				skills[selected].color = Color.green;
+				if (GlobalState.coins >= skillsCost[selected])
+					skills[selected].color = Color.green;
+				else
+					skills [selected].color = Color.red;
 			}
 		}
 		if (Input.GetAxis ("Mouse ScrollWheel") < 0) {
 			if (selected > 0) {
 				skills [selected].color = Color.white;
 				selected--;
-				skills [selected].color = Color.green;
+				if (GlobalState.coins >= skillsCost[selected])
+					skills [selected].color = Color.green;
+				else
+					skills [selected].color = Color.red;
 			}
 		}
 		if (Input.GetMouseButtonDown (0)) {
 			RaycastHit hit = new RaycastHit();
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(ray,out hit, 1000)) {
-				if (hit.collider.tag == "Ground" && !hit.collider.gameObject.GetComponent<GroundIndividual>().trapped) {
+				if (hit.collider.tag == "Ground" &&
+				    !hit.collider.gameObject.GetComponent<GroundIndividual>().trapped &&
+				    GlobalState.coins >= skillsCost[selected]) {
+					GlobalState.coins -= skillsCost[selected];
 					GameObject go = Instantiate(prefabSkills[selected],
 					                            hit.transform.position + new Vector3(-1f, 0, 1f),
 					                            prefabSkills[selected].transform.rotation) as GameObject;

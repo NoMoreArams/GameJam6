@@ -7,7 +7,7 @@ public class GlobalState : MonoBehaviour {
 	public static int round;
 	public static int score;
 	public static int lifes;
-	public static int coins;
+	public static int coins = 3;
 	public float time = 5f;
 	private float time2Start;
 	public int nEnemies;
