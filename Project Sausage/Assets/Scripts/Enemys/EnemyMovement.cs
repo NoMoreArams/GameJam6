@@ -8,7 +8,8 @@ public class EnemyMovement : MonoBehaviour {
     public WayPoint wayPointToMove;
 
     public float rank = 1.5f;
-    public float distance;
+    public bool haveTarget = false;
+    //public float distance;
 
     void Awake()
     {
@@ -22,34 +23,60 @@ public class EnemyMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (!InRank())
+        if (!haveTarget)
         {
-            enemyAgent.speed = enemyStats.Speed;
-            if (CheckDistances())
-                MoveEnemyToNextPoint();
-        }
-        else
-        {
-            if (!wayPointToMove.endWayPoint)
+            if (!InRank())
             {
-                MoveEnemyToNextPoint();
+                enemyAgent.speed = enemyStats.Speed;
+                if (CheckDistances())
+                    MoveEnemyToNextPoint();
             }
             else
             {
-                DestroyImmediate(gameObject);
+                if (!wayPointToMove.endWayPoint)
+                {
+                    MoveEnemyToNextPoint();
+                }
+                else
+                {
+                    DestroyImmediate(gameObject);
+                }
             }
         }
     }
 
 	// Update is called once per frame
 	void Update () {
-        distance = Vector3.Distance(transform.position, wayPointToMove.transform.position);
+        //distance = Vector3.Distance(transform.position, wayPointToMove.transform.position);
 	}
+
+    public void StopMovenment()
+    {
+        enemyAgent.Stop();
+    }
+
+    public void ResumeMovenment()
+    {
+        enemyAgent.Resume();
+    }
+
+    public void MoveToTarget(Vector3 pe_targetPosition)
+    {
+        haveTarget = true;
+        SetEnemyDestination(pe_targetPosition);
+    }
+
+    public void ResumeToWayPoint()
+    {
+        haveTarget = false;
+        SetEnemyDestination(wayPointToMove.transform.position);
+        ResumeMovenment();
+    }
 
     public void SetWayPointToMove(WayPoint pe_wayPointToMove)
     {
         wayPointToMove = pe_wayPointToMove;
-        SetEnemyDestination();
+        SetEnemyDestination(wayPointToMove.transform.position);
     }
 
     bool InRank()
@@ -61,13 +88,14 @@ public class EnemyMovement : MonoBehaviour {
     {
         wayPointToMove = wayPointToMove.nextWayPoint;
         wayPointToMove.ChangeNextWayPoint();
-        SetEnemyDestination();
+        SetEnemyDestination(wayPointToMove.transform.position);
     }
-    void SetEnemyDestination()
+
+    void SetEnemyDestination(Vector3 pe_destination)
     {
-        Vector3 w_destination = new Vector3(wayPointToMove.transform.position.x,
+        Vector3 w_destination = new Vector3(pe_destination.x,
                                             transform.position.y,
-                                            wayPointToMove.transform.position.z);
+                                            pe_destination.z);
         enemyAgent.SetDestination(w_destination);
     }
 

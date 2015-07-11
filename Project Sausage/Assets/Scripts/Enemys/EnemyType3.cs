@@ -16,6 +16,11 @@ public class EnemyType3 : EnemyBase
         enemyAgent.speed = enemyStats.Speed;
     }
 
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+    }
+
     // Update is called once per frame
     void Update()
     {

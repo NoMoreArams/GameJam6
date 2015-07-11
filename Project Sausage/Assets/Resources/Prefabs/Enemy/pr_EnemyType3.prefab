@@ -140,7 +140,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 48
   m_CollisionDetection: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wayPointToMove: {fileID: 0}
   rank: 1.5
-  distance: 0
+  haveTarget: 0
 --- !u!114 &11420110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f111c889fa2d048549d0bf7b2ba115eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxHealth: 0
   Health: 3
   Speed: 1
   Damage: 3
@@ -185,8 +186,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d13c197a2b220459266ae3f6193c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actualState: 0
+  targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 20
+  percentAttacker: 100
+  rankAttacker: 10
+  rankAttack: 7
+  ataco: 0
+  distancia: 0
 --- !u!114 &11499198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,6 +308,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: percentAttacker
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
