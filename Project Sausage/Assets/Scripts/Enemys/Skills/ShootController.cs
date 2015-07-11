@@ -4,6 +4,7 @@ using System.Collections;
 public class ShootController : MonoBehaviour {
 
     private Vector3 direction;
+    private int damage;
     public float speed;
     private bool markToDestroy = false;
 	// Use this for initialization
@@ -25,7 +26,8 @@ public class ShootController : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerStats>().ReceiveDamage(1);
+            DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
+            db.Execute(damage);
             markToDestroy = true;
         }
     }
@@ -33,5 +35,10 @@ public class ShootController : MonoBehaviour {
     public void SetPlayerTarget(Vector3 pe_direction)
     {
         direction = pe_direction;
+    }
+
+    public void SetEnemyDamage(int pe_enemyDamage)
+    {
+        damage = pe_enemyDamage;
     }
 }
