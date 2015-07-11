@@ -62,21 +62,21 @@ public class PlayerDie : MonoBehaviour {
 		gameObject.GetComponent<PlayerMovement>().enabled = false;
 
 		// Deshabilitar collider
-		gameObject.GetComponent<BoxCollider> ().enabled = false;
+		gameObject.GetComponent<Collider> ().enabled = false;
 
 		// Habilitar efectos
 		camara.GetComponent<Blur> ().enabled = true;
 		camara.GetComponent<Grayscale> ().enabled = true;
 
 		// Hacer semitransparente
-		Color color = gameObject.GetComponent<MeshRenderer> ().material.color;
-		color.a = 0.3f;
-		gameObject.GetComponent<MeshRenderer> ().material.color = color;
+		//Color color = gameObject.GetComponent<MeshRenderer> ().material.color;
+		//color.a = 0.3f;
+		//gameObject.GetComponent<MeshRenderer> ().material.color = color;
 
 		// Cabeza
-		Color color_cabeza = cabeza.GetComponent<MeshRenderer> ().material.color;
-		color_cabeza.a = 0.3f;
-		cabeza.GetComponent<MeshRenderer> ().material.color = color_cabeza;
+		//Color color_cabeza = cabeza.GetComponent<MeshRenderer> ().material.color;
+		//color_cabeza.a = 0.3f;
+		//cabeza.GetComponent<MeshRenderer> ().material.color = color_cabeza;
 
 		// Esperar muerto
 		yield return new WaitForSeconds (DeadTime);
@@ -88,19 +88,19 @@ public class PlayerDie : MonoBehaviour {
 		Stats.Health = Stats.MaxHealth;
 
 		// Hacer solido
-		color.a = 1.0f;
-		gameObject.GetComponent<MeshRenderer> ().material.color = color;
+		//color.a = 1.0f;
+		//gameObject.GetComponent<MeshRenderer> ().material.color = color;
 
 		// Cabeza
-		color_cabeza.a = 1.0f;
-		cabeza.GetComponent<MeshRenderer> ().material.color = color_cabeza;
+		//color_cabeza.a = 1.0f;
+		//cabeza.GetComponent<MeshRenderer> ().material.color = color_cabeza;
 
 		// Habilitar efectos
 		camara.GetComponent<Blur> ().enabled = false;
 		camara.GetComponent<Grayscale> ().enabled = false;
 
 		// Habilitar collider
-		gameObject.GetComponent<BoxCollider> ().enabled = true;
+		gameObject.GetComponent<Collider> ().enabled = true;
 
 		// Habilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = true;
