@@ -15,6 +15,11 @@ public class EnemyType0 : EnemyBase
         base.Start();
     }
 
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+    }
+
     // Update is called once per frame
     void Update()
     {
