@@ -30,26 +30,26 @@ public class PlayerRangeAttack : MonoBehaviour {
 	void Update ()
 	{
 		// Click izquierdo
-		if (Input.GetMouseButtonDown (0)) {
+		/*if (Input.GetMouseButtonDown (0)) {
 			if (time2attack <= 0) {
 				time2attack = cooldown;
 				ThrowKnife ();
 			}
-		}
+		}*/
 		time2attack -= Time.deltaTime;
 	}
 
 	
 
 	// Lanzar cuchillo
-	void ThrowKnife ()
+	public void ThrowKnife ()
 	{
-
-
-		// DEBUG -- Esperar
-		GetComponent<Animator> ().SetBool ("throw", true);
-		StartCoroutine ("Wait");
-		
+		if (time2attack <= 0) {
+			time2attack = cooldown;
+			// DEBUG -- Esperar
+			GetComponent<Animator> ().SetBool ("throw", true);
+			StartCoroutine ("Wait");
+		}
 	}
 	
 	// DEBUG: tiempo

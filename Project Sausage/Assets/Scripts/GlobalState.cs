@@ -40,6 +40,7 @@ public class GlobalState : MonoBehaviour {
 
 	void Start () {
 		time2Start = time;
+		//Cursor.visible = false;
 		ps = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats> ();
 	}
 
