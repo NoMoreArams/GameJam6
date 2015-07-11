@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Update ()
 	{
 		// Recoger movimiento
-		Debug.Log ("h: " + h + "; v: " + v + "; camara_ry: " + camara.transform.rotation.x);
+		//Debug.Log ("h: " + h + "; v: " + v + "; camara_ry: " + camara.transform.rotation.x);
 
 		// Obtener velocidad
 		speed = gameObject.GetComponent<PlayerStats>().Speed;
