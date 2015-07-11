@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour {
     private NavMeshAgent enemyAgent;
     public WayPoint wayPointToMove;
 
-    public float rank = 0.75f;
+    public float rank = 1.5f;
     public float distance;
 
     void Awake()

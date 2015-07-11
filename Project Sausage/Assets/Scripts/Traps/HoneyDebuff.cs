@@ -3,13 +3,13 @@ using System.Collections;
 
 public class HoneyDebuff : MonoBehaviour {
 
-	public int slow = 10;
+	public int slow  = 1;
 	public float duration = 2f;
 
 	public void Execute (int slow, float duration) {
 		this.slow = slow;
 		this.duration = duration;
-		// BAJAR LA VELOCIDAD
+		GetComponent<EnemyStats> ().Speed -= slow;
 		GetComponent<MeshRenderer> ().material.color = Color.red;
 		Debug.Log ("RALENTIZADO");
 		StartCoroutine ("selfDestroy");
@@ -18,6 +18,7 @@ public class HoneyDebuff : MonoBehaviour {
 	public IEnumerator selfDestroy () {
 		yield return new WaitForSeconds (duration);
 		Debug.Log ("FIN RALENTIZADO");
+		GetComponent<EnemyStats> ().Speed += slow;
 		GetComponent<MeshRenderer> ().material.color = Color.yellow;
 		// SUBIR LA VELOCIDAD
 		Destroy (this);
