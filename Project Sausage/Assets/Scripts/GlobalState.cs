@@ -4,10 +4,11 @@ using System.Collections;
 
 public class GlobalState : MonoBehaviour {
 
-	public static int round;
-	public static int score;
-	public static int lifes;
+	public static int round = 0;
+	public static int score = 0;
+	public static int lifes = 4;
 	public static int coins = 10;
+	public PlayerStats ps;
 	public float time = 5f;
 	private float time2Start;
 	public int nEnemies;
@@ -18,6 +19,8 @@ public class GlobalState : MonoBehaviour {
 	public Text scoreText;
 	public GameObject time2StartText;
 	public Text coinsText;
+
+	public Image hpbar;
 
 	public static void addScore (int score) {
 		GlobalState.score += score;
@@ -37,6 +40,7 @@ public class GlobalState : MonoBehaviour {
 
 	void Start () {
 		time2Start = time;
+		ps = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats> ();
 	}
 
 	void FixedUpdate () {
@@ -56,6 +60,8 @@ public class GlobalState : MonoBehaviour {
 		}
 		coinsText.text = coins.ToString ();
 		scoreText.text = score.ToString ();
+
+		hpbar.fillAmount = ps.Health / ps.MaxHealth;
 	}
 
 }
