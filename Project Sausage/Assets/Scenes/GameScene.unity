@@ -5104,7 +5104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 172488, guid: c3697107998384e10a4925dc495a987d, type: 2}
   - {fileID: 100842, guid: 4e18e8060d81d0d4e86e018f9e9b1a83, type: 2}
   - {fileID: 108818, guid: 8bfbee49f63835e46bceaafdec055e89, type: 2}
   - {fileID: 173578, guid: baa478edda39e514ebb70e529b2dc268, type: 2}
