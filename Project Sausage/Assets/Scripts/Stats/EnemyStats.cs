@@ -7,12 +7,11 @@ public class EnemyStats : PlayerStats {
 	public int Score;
 
     private NavMeshAgent enemyAgent;
-    private PlayerStats playerStats;
 
     void Awake()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
-        GameObject go_player = GameObject.FindGameObjectWithTag("Player");
+        /*GameObject go_player = GameObject.FindGameObjectWithTag("Player");
         if (go_player != null)
         {
             playerStats = go_player.GetComponent<PlayerStats>();
@@ -20,7 +19,7 @@ public class EnemyStats : PlayerStats {
         else
         {
             Debug.LogError("Error. Player don't find.");
-        }
+        }*/
     }
 
 	// Use this for initialization
@@ -30,12 +29,13 @@ public class EnemyStats : PlayerStats {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
 	
-	}
+	}*/
 
     public void GetRewards()
     {
-        playerStats.Coins += Coins;
+        GlobalState.addCoins(Coins);
+        GlobalState.addScore(Score);
     }
 }

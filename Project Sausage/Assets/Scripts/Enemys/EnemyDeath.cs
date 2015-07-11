@@ -18,7 +18,6 @@ public class EnemyDeath : MonoBehaviour {
 	void Update () {
         if (enemyStats != null && !enemyStats.Alive)
         {
-            Debug.Log("Salud --> " + enemyStats.Health);
             enemyStats.GetRewards();
             DestroyImmediate(gameObject);
         }
