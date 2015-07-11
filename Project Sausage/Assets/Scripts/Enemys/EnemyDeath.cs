@@ -19,6 +19,7 @@ public class EnemyDeath : MonoBehaviour {
         if (enemyStats != null && !enemyStats.Alive)
         {
             enemyStats.GetRewards();
+            DestroyImmediate(enemyStats.GetEnemyCanvas());
             DestroyImmediate(gameObject);
         }
 	}

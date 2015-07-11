@@ -43,4 +43,14 @@ public class EnemyStats : PlayerStats {
         healthPoints.SetAnchorCanvas(anchorCanvas);
         healthPoints.SetInitialHealthPoints(Health);
     }
+
+    public GameObject GetEnemyCanvas()
+    {
+        return healthPoints.gameObject;
+    }
+
+    protected override void UpdateEnemyCanvas(int pe_damage)
+    {
+        healthPoints.UpdateHealthPoints(pe_damage);
+    }
 }

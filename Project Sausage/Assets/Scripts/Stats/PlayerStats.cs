@@ -37,5 +37,12 @@ public class PlayerStats : MonoBehaviour {
 		// Comprobar no sea menor de cero
 		if (Health < 0)
 			Health = 0;
+
+        UpdateEnemyCanvas(damage);
 	}
+
+    protected virtual void UpdateEnemyCanvas(int dmg)
+    {
+
+    }
 }
