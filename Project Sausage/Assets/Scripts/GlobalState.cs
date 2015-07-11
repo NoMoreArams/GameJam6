@@ -19,8 +19,6 @@ public class GlobalState : MonoBehaviour {
 	public GameObject time2StartText;
 	public Text coinsText;
 
-	public GameObject lifesScreen;
-
 	public static void addScore (int score) {
 		GlobalState.score += score;
 	}
@@ -31,11 +29,10 @@ public class GlobalState : MonoBehaviour {
 
 	public static void subsLife () {
 		GlobalState.lifes--;
-		lifesScreen.transform.GetChild(GlobalState.lifes).gameObject.SetActive(false);
+		GameObject.Find("Lifes").transform.GetChild(GlobalState.lifes).gameObject.SetActive(false);
 
 		if (lifes == 0)
 			; // FIN DE PARTIDA
-		}
 	}
 
 	void Start () {
