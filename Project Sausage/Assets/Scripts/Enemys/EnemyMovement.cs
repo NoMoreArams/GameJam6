@@ -25,14 +25,14 @@ public class EnemyMovement : MonoBehaviour {
         if (!InRank())
         {
             enemyAgent.speed = enemyStats.Speed;
-            enemyAgent.SetDestination(wayPointToMove.transform.position);
+            if (CheckDistances())
+                MoveEnemyToNextPoint();
         }
         else
         {
             if (!wayPointToMove.endWayPoint)
             {
-                wayPointToMove = wayPointToMove.nextWayPoint;
-                wayPointToMove.ChangeNextWayPoint();
+                MoveEnemyToNextPoint();
             }
             else
             {
@@ -49,11 +49,40 @@ public class EnemyMovement : MonoBehaviour {
     public void SetWayPointToMove(WayPoint pe_wayPointToMove)
     {
         wayPointToMove = pe_wayPointToMove;
+        SetEnemyDestination();
     }
 
     bool InRank()
     {
         float w_distance = Vector3.Distance(transform.position, wayPointToMove.transform.position);
         return w_distance < rank;
+    }
+    void MoveEnemyToNextPoint()
+    {
+        wayPointToMove = wayPointToMove.nextWayPoint;
+        wayPointToMove.ChangeNextWayPoint();
+        SetEnemyDestination();
+    }
+    void SetEnemyDestination()
+    {
+        Vector3 w_destination = new Vector3(wayPointToMove.transform.position.x,
+                                            transform.position.y,
+                                            wayPointToMove.transform.position.z);
+        enemyAgent.SetDestination(w_destination);
+    }
+
+    bool CheckDistances()
+    {
+        if (wayPointToMove.endWayPoint)
+            return false;
+
+        float w_distanceToWayPoint, w_distanceToNextWayPoint;
+        w_distanceToWayPoint = Vector3.Distance(transform.position,wayPointToMove.transform.position);
+        w_distanceToNextWayPoint = Vector3.Distance(transform.position, wayPointToMove.nextWayPoint.transform.position);
+
+        if (w_distanceToNextWayPoint < w_distanceToWayPoint)
+            return true;
+
+        return false;
     }
 }

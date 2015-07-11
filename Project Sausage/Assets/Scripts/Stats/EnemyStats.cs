@@ -15,7 +15,8 @@ public class EnemyStats : PlayerStats {
 
 	// Use this for initialization
 	void Start () {
-        enemyAgent.radius = Random.Range(0.5f, 2.0f);
+        //enemyAgent.radius = Random.Range(0.5f, 2.0f);
+        enemyAgent.avoidancePriority = Random.Range(25, 75);
 	}
 	
 	// Update is called once per frame

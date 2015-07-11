@@ -5,6 +5,9 @@ public class EnemyGeneration : MonoBehaviour {
 
     public GameObject[] enemy;
     public WayPoint[] initialsWayPoints;
+
+    public int numEnemys;
+    public float timeBetweenEnemys;
 	// Use this for initialization
 	void Start () {
         
@@ -20,4 +23,9 @@ public class EnemyGeneration : MonoBehaviour {
             go_enemy.GetComponent<EnemyBase>().setWayPoint(initialsWayPoints[w_wayPoint]);
         }
 	}
+
+    public void StartWave(int pe_numEnemys, float pe_timeBetweenEnemys)
+    {
+
+    }
 }
