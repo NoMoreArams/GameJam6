@@ -39,7 +39,9 @@ public class EnemyMovement : MonoBehaviour {
                 }
                 else
                 {
-                    DestroyImmediate(gameObject);
+                    GlobalState.subsLife();
+                    enemyStats.KillEnemy();
+                    //DestroyImmediate(gameObject);
                 }
             }
         }

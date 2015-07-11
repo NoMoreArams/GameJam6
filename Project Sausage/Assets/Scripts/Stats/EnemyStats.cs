@@ -27,6 +27,11 @@ public class EnemyStats : PlayerStats {
         GlobalState.addScore(Score);
     }
 
+    public void KillEnemy()
+    {
+        Health = 0;
+    }
+
     void SetAnchorCanvas()
     {
         GameObject enemyCanvas = GameObject.FindGameObjectWithTag("CanvasEnemys");
