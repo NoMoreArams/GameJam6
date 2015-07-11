@@ -11,18 +11,11 @@ public class PlayerStats : MonoBehaviour {
 	public int Coins;
 
 	// Indicador de si esta vivo
-	private bool alive;
+	private bool alive = true;
 
 	public bool Alive
 	{
 		get { return alive;}
-	}
-
-	// Use this for initialization
-	void Start ()
-	{
-		// Empezar vivo
-		alive = true;
 	}
 	
 	// Update is called once per frame
