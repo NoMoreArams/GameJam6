@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public static class GlobalState : MonoBehaviour {
+public class GlobalState : MonoBehaviour {
 
 	public static int round;
 	public static int score;
@@ -10,11 +10,13 @@ public static class GlobalState : MonoBehaviour {
 	public static int coins;
 	public float time = 5f;
 	private float time2Start;
-	public int nEnemies = 5;
-	public float tEnemies = 0.5f;
+	public int nEnemies;
+	public float tEnemies;
+	public bool gameStarted = false;
 
 	public Text scoreText;
 	public GameObject time2StartText;
+	public Text coinsText;
 
 	public static void addScore (int score) {
 		GlobalState.score += score;
@@ -33,13 +35,16 @@ public static class GlobalState : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (time2Start <= 0) {
+		if (time2Start <= 0 && !gameStarted) {
+			gameStarted = true;
 			GameObject.Find ("pr_InitialWayPoint").GetComponent<EnemyGeneration> ().StartWave (nEnemies, tEnemies);
 			time2StartText.SetActive(false);
 		} else {
 			time2Start -= Time.fixedDeltaTime;
-			time2StartText.GetComponent<Text>().text = time2Start + "";
+			time2StartText.GetComponent<Text>().text = time2Start.ToString("F0");;
 		}
+		coinsText.text = coins.ToString ();
+		scoreText.text = score.ToString ();
 	}
 
 }

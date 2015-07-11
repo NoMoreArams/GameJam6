@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hits: 0
-  damage: 0
+  damage: 3
   coins: 0
   debuff: 0
   cooldown: 0
@@ -114,6 +114,10 @@ Prefab:
       propertyPath: explosion
       value: 
       objectReference: {fileID: 186610, guid: ae2a35b35e6334f359bcfefd2f145198, type: 2}
+    - target: {fileID: 0}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197008}

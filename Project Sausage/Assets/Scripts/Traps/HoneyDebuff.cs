@@ -6,7 +6,7 @@ public class HoneyDebuff : MonoBehaviour {
 	public float slow  = 50f;
 	public float duration = 2f;
 
-	public void Execute (int slow, float duration) {
+	public void Execute (float slow, float duration) {
 		this.slow = slow;
 		this.duration = duration;
 		GetComponent<EnemyStats> ().Speed *= (slow / 100f);
