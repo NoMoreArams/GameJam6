@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
 	private float ry;
 
 	// Velocidad del player
-	private int speed;
+	private float speed;
 
 	// Use this for initialization
 	void Start ()

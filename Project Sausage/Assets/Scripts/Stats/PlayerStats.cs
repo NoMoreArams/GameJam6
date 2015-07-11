@@ -6,7 +6,7 @@ public class PlayerStats : MonoBehaviour {
 	// Stats basicos
 	public int MaxHealth;
 	public int Health;
-	public int Speed;
+	public float Speed;
 	public int Damage;
 	public int Coins;
 

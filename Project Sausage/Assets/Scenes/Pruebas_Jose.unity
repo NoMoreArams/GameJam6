@@ -220,7 +220,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1001 &2100264272
+--- !u!1001 &1395445796
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -229,7 +229,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .779167652
+      value: .667516589
       objectReference: {fileID: 0}
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -237,7 +237,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .806240439
+      value: .695031583
       objectReference: {fileID: 0}
     - target: {fileID: 484460, guid: be75e4b4a661a4162ac6f1843b077b3a, type: 2}
       propertyPath: m_LocalRotation.x

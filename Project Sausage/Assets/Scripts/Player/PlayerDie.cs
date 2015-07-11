@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class PlayerDie : MonoBehaviour {
 
@@ -12,6 +13,9 @@ public class PlayerDie : MonoBehaviour {
 	// Cabeza
 	private GameObject cabeza;
 
+	// Camara
+	private GameObject camara;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -22,6 +26,10 @@ public class PlayerDie : MonoBehaviour {
 		// Obtener cabeza
 		if (cabeza == null)
 			cabeza = GameObject.Find ("Cabeza");
+
+		// Obtener camara
+		if (camara == null)
+			camara = GameObject.Find ("Camera");
 	}
 	
 	// Update is called once per frame
@@ -47,11 +55,15 @@ public class PlayerDie : MonoBehaviour {
 	// Morir
 	private IEnumerator Die()
 	{
+		// Particulas
+
+
 		// Deshabilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = false;
 
-		// Particulas
-
+		// Habilitar efectos
+		camara.GetComponent<Blur> ().enabled = true;
+		camara.GetComponent<Grayscale> ().enabled = true;
 
 		// Hacer semitransparente
 		Color color = gameObject.GetComponent<MeshRenderer> ().material.color;
@@ -66,6 +78,9 @@ public class PlayerDie : MonoBehaviour {
 		// Esperar muerto
 		yield return new WaitForSeconds (DeadTime);
 
+
+		// REVIVIR
+
 		// Subir vida
 		Stats.Health = Stats.MaxHealth;
 
@@ -77,7 +92,11 @@ public class PlayerDie : MonoBehaviour {
 		color_cabeza.a = 1.0f;
 		cabeza.GetComponent<MeshRenderer> ().material.color = color_cabeza;
 
-		// Deshabilitar movimiento
+		// Habilitar efectos
+		camara.GetComponent<Blur> ().enabled = false;
+		camara.GetComponent<Grayscale> ().enabled = false;
+
+		// Habilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = true;
 	}
 }
