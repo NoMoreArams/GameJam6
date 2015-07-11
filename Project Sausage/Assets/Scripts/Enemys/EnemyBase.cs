@@ -54,7 +54,7 @@ public class EnemyBase : MonoBehaviour {
             default: break;
         }
 
-        if (!targetPlayer.GetComponent<PlayerStats>().Alive)
+        if (isAttacker && !targetPlayer.GetComponent<PlayerStats>().Alive)
             RestarMovenment();
     }
 
@@ -63,9 +63,9 @@ public class EnemyBase : MonoBehaviour {
         
 	}
 
-    void Movement()
+    protected virtual void Movement()
     {
-        if (targetPlayer.GetComponent<PlayerStats>().Alive && InRankAttack(rankAttacker))
+        if (isAttacker && targetPlayer.GetComponent<PlayerStats>().Alive && InRankAttack(rankAttacker))
         {
             actualState = EnemyStates.movenmentToAttack;
             //enemyMovement.StopMovenment();
@@ -75,12 +75,13 @@ public class EnemyBase : MonoBehaviour {
 
     void MovenmentToAttack()
     {
-        if (InRankAttack(rankAttack))
+        if (InRankAttack(rankAttack) && CanISee())
         {
             enemyMovement.StopMovenment();
+            StarAttack();
             actualState = EnemyStates.Attack;
         }
-        else if (InRankAttack(rankAttacker))
+        else if (!InRankAttack(rankAttacker) || !CanISee())
         {
             enemyMovement.ResumeMovenment();
             actualState = EnemyStates.movenment;
@@ -88,14 +89,16 @@ public class EnemyBase : MonoBehaviour {
                 
     }
 
-    void Attack()
+    protected virtual void Attack()
     {
-        if (!InRankAttack(rankAttack))
+        if (!InRankAttack(rankAttack) || !CanISee())
         {
             actualState = EnemyStates.movenment;
             enemyMovement.ResumeMovenment();
         }
     }
+
+    protected virtual void StarAttack() { }
 
     void RestarMovenment()
     {
@@ -122,6 +125,26 @@ public class EnemyBase : MonoBehaviour {
         if (isAttacker && targetPlayer != null)
             return Vector3.Distance(transform.position, targetPlayer.transform.position) < pe_attack;
 
+        return false;
+    }
+
+    bool CanISee()
+    {
+        if (!isAttacker)
+            return false;
+
+        RaycastHit hit;
+        Vector3 direccion = targetPlayer.transform.position - transform.position;
+        float dist = Vector3.Distance(targetPlayer.transform.position, transform.position);
+        Ray lookRay = new Ray(transform.position, direccion);
+
+        if (Physics.Raycast(lookRay, out hit, dist))
+        {
+            if (hit.collider.tag == "Player")
+            {
+                return true;
+            }
+        }
         return false;
     }
 
