@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour {
 
     private NavMeshAgent enemyAgent;
+    private EnemyStats enemyStats;
     public WayPoint wayPointToMove;
 
     public float rank = 1.5f;
@@ -12,6 +13,7 @@ public class EnemyMovement : MonoBehaviour {
     void Awake()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
+        enemyStats = GetComponent<EnemyStats>();
     }
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,7 @@ public class EnemyMovement : MonoBehaviour {
     {
         if (!InRank())
         {
+            enemyAgent.speed = enemyStats.Speed;
             enemyAgent.SetDestination(wayPointToMove.transform.position);
         }
         else

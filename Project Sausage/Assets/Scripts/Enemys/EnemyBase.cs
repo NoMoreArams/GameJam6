@@ -8,7 +8,7 @@ public class EnemyBase : MonoBehaviour {
     protected NavMeshAgent enemyAgent;
     protected EnemyStats enemyStats;
 
-    protected bool isAttacker = false;
+    public bool isAttacker = false;
     public float percentAttacker = 20.0f;
 
     protected string nameType;
@@ -25,6 +25,7 @@ public class EnemyBase : MonoBehaviour {
     {
         gameObject.name = nameType + enemyNumber;
         enemyNumber++;
+        SetIsAttacker();
 	}
 	
 	// Update is called once per frame
