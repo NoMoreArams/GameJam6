@@ -42,9 +42,10 @@ public class EnemyType1 : EnemyBase {
 
     void ThrowSkill()
     {
-        GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
-
-        HitController w_shootControler = ob_shoot.GetComponent<HitController>();
+        GameObject ob_hit = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
+        ob_hit.transform.parent = transform;
+        ob_hit.gameObject.name = "Hit";
+        HitController w_shootControler = ob_hit.GetComponent<HitController>();
         w_shootControler.SetEnemyDamage(enemyStats.Damage);
     }
     /*IEnumerator ThrowSkill()

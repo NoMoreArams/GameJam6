@@ -64,8 +64,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.605681539, y: .364000052, z: -.574745119}
-  m_LocalScale: {x: .536863029, y: .536863029, z: .536863029}
+  m_LocalPosition: {x: 0, y: .270999998, z: .788999975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 470028}
   m_RootOrder: 0
@@ -222,6 +222,8 @@ MonoBehaviour:
   rankAttack: 1
   ataco: 0
   distancia: 0
+  skills:
+  - {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
 --- !u!114 &11499198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,6 +288,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: skills.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: rank
       value: 1.5
       objectReference: {fileID: 0}
@@ -349,6 +355,10 @@ Prefab:
       propertyPath: rankAttack
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: skills.Array.data[0]
+      value: 
+      objectReference: {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 173578}
