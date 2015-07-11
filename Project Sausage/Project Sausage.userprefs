@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/GroundIndividual.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Traps/TrapAttributtes.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/Traps/TrapMaster.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Traps/TrapHoney.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Traps/HoneyDebuff.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Traps/TrapFire.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Traps/DamageDebuff.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Map/GroundIndividual.cs" Line="8" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
