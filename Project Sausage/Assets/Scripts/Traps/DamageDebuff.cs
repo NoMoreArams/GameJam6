@@ -4,7 +4,7 @@ using System.Collections;
 public class DamageDebuff : MonoBehaviour {
 
 	public void Execute (int damage) {
-		// BAJAR LA VELOCIDAD
+		GetComponent<EnemyStats> ().Health -= damage;
 		Debug.Log ("DAÑO REALIZADO");
 		Destroy (this);
 	}
