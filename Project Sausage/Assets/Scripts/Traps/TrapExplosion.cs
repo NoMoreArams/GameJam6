@@ -9,6 +9,7 @@ public class TrapExplosion : TrapMaster {
 	public void Execute (GameObject other) {
 		GameObject exp = Instantiate (explosion, transform.position, explosion.transform.rotation) as GameObject;
 		exp.GetComponent<ExplosionHandler> ().tAttr = GetComponent<TrapAttributtes> ();
+		gi.trapped = false;
 		Destroy (gameObject);
 	}
 }

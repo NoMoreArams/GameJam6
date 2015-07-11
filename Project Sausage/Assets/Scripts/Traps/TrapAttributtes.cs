@@ -8,7 +8,7 @@ public class TrapAttributtes : MonoBehaviour {
 
 	public float debuff;
 	public float cooldown;
-	private float time2Attack;	
+	private float time2Attack;
 
 	void Start () {
 		time2Attack = cooldown;

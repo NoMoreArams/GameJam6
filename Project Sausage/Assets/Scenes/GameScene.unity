@@ -4287,6 +4287,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1427146955}
   - 114: {fileID: 1427146954}
+  - 114: {fileID: 1427146956}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -4324,6 +4325,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!114 &1427146956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427146953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8930d72945f403c86f65f36bd2f675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skills:
+  - {fileID: 1289449785}
+  - {fileID: 604963049}
+  - {fileID: 119403914}
+  prefabSkills:
+  - {fileID: 165366, guid: af55ea1b8f34a432581dd5bba1895041, type: 2}
+  - {fileID: 125664, guid: f9e9de7252d594c269df707f5a37a6da, type: 2}
+  - {fileID: 197008, guid: 8ee23873b652447649c53183962fa0c9, type: 2}
+  selected: 0
 --- !u!1 &1461198843 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100082, guid: be158488743124e60bb95da39c0ea464, type: 3}
@@ -5198,7 +5219,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &1877337118 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100158, guid: be158488743124e60bb95da39c0ea464, type: 3}
@@ -5455,7 +5476,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &2104278105
 GameObject:
   m_ObjectHideFlags: 0

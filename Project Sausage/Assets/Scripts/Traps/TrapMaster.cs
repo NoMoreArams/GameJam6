@@ -4,6 +4,7 @@ using System.Collections;
 public class TrapMaster : MonoBehaviour {
 
 	protected TrapAttributtes tAttr;
+	public GroundIndividual gi;
 
 	void Start () {
 		tAttr = GetComponent<TrapAttributtes> ();

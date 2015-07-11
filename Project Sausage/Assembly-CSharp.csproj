@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Traps\TrapFire.cs" />
      <Compile Include="Assets\Scripts\Traps\TrapHoney.cs" />
      <Compile Include="Assets\Scripts\Traps\TrapMaster.cs" />
+     <Compile Include="Assets\SelectTrap.cs" />
      <None Include="Assets\Resources\Sounds\Music\Readme.txt.txt" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
