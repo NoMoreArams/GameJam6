@@ -46,7 +46,7 @@ public class EnemyType2 : EnemyBase
     {
         while (true)
         {
-            GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position,Quaternion.identity) as GameObject;
+            GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position, transform.rotation) as GameObject;
             Vector3 w_targetAux = targetPlayer.transform.position;
             w_targetAux.y = thrower.transform.position.y;
             Vector3 w_direction = w_targetAux - thrower.transform.position;
