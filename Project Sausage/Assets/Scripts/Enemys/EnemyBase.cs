@@ -26,6 +26,7 @@ public class EnemyBase : MonoBehaviour {
     public bool ataco = false;
     public float distancia;
     public bool loVeo;
+    public GameObject thrower;
 
     protected string nameType;
 

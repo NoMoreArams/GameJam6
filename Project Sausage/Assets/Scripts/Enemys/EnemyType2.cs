@@ -3,8 +3,6 @@ using System.Collections;
 
 public class EnemyType2 : EnemyBase
 {
-    private GameObject thrower;
-
     public GameObject[] skills;
     protected override void Awake()
     {
@@ -22,6 +20,13 @@ public class EnemyType2 : EnemyBase
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
+        if (isAttacker)
+        {
+            Vector3 w_targetAux = targetPlayer.transform.position;
+            w_targetAux.y = thrower.transform.position.y;
+            Vector3 w_direction = w_targetAux - thrower.transform.position;
+            Debug.DrawRay(transform.position, w_direction, Color.red);
+        }
     }
 
     // Update is called once per frame
@@ -50,7 +55,8 @@ public class EnemyType2 : EnemyBase
             Vector3 w_targetAux = targetPlayer.transform.position;
             w_targetAux.y = thrower.transform.position.y;
             Vector3 w_direction = w_targetAux - thrower.transform.position;
-            w_direction = w_direction / w_direction.magnitude;
+            //w_direction = w_direction / w_direction.magnitude;
+            
             ShootController w_shootControler = ob_shoot.GetComponent<ShootController>();
             w_shootControler.SetPlayerTarget(w_direction);
             w_shootControler.SetEnemyDamage(enemyStats.Damage);

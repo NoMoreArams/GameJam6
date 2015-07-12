@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemyType1 : EnemyBase {
 
-    public GameObject thrower;
     public GameObject[] skills;
 
 	public float Esperar;
