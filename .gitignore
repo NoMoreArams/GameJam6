@@ -61,3 +61,4 @@ Project Sausage/Project Sausage-csharp.sln
 /Project Sausage/*.userprefs
 */Project Sausage.userprefs
 */Project Sausage/Project Sausage.userprefs
+Project Sausage/Assets/Scripts/Enemys/Skills/ShootController.cs
