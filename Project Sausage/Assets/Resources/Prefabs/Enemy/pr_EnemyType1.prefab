@@ -239,13 +239,16 @@ MonoBehaviour:
   actualState: 0
   targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 35
+  percentAttacker: 25
   rankAttacker: 10
   rankAttack: 1
   ataco: 0
   distancia: 0
+  loVeo: 0
+  thrower: {fileID: 0}
   skills:
   - {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
+  Esperar: 0
 --- !u!114 &11475664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -402,7 +405,7 @@ Prefab:
       objectReference: {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
     - target: {fileID: 0}
       propertyPath: percentAttacker
-      value: 35
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer

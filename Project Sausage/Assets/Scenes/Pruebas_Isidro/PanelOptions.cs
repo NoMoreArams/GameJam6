@@ -4,12 +4,12 @@ using System.Collections;
 public class PanelOptions : MonoBehaviour {
 
 
-    void OnCLickPlay()
+    public void OnCLickPlay()
     {
-        Application.LoadLevel("GameScene");
+        Application.LoadLevel(3);
     }
 
-    void OnClickExit()
+    public void OnClickExit()
     {
         Application.Quit();
     }
