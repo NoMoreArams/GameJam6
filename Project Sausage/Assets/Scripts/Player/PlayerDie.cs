@@ -16,6 +16,11 @@ public class PlayerDie : MonoBehaviour {
 	// Camara
 	private GameObject camara;
 
+	// Posicion al morir
+	private Vector3 posDie;
+
+	private bool Muriendo = false;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -38,7 +43,17 @@ public class PlayerDie : MonoBehaviour {
 		// Comprobar si el player esta vivo
 		if (!Stats.Alive)
 		{
-			StartCoroutine("Die");
+			if(!Muriendo)
+			{
+				// Guardar posicion
+				posDie = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+
+				// Morir
+				StartCoroutine("Die");
+			}
+
+			// No moverse
+			transform.position = posDie;
 		}
 	}
 
@@ -55,8 +70,9 @@ public class PlayerDie : MonoBehaviour {
 	// Morir
 	private IEnumerator Die()
 	{
-		// Particulas
+		Muriendo = true;
 
+		// Particulas
 
 		// Deshabilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = false;
@@ -111,5 +127,7 @@ public class PlayerDie : MonoBehaviour {
 		
 		// Deshabilitar lanzar habilidades
 		GameObject.Find("GameState").GetComponent<SelectTrap>().enabled = true;
+
+		Muriendo = false;
 	}
 }
