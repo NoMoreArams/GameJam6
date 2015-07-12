@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
   - enabled: 1
     path: Assets/Scenes/Ranking.unity
+  - enabled: 1
+    path: Assets/Scenes/Pruebas_Isidro.unity
+  - enabled: 1
+    path: Assets/Scenes/GameScene_JoseM.unity

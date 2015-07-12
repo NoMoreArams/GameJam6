@@ -31,7 +31,7 @@ public class ManageRanking : MonoBehaviour
 			ObtenerScore();
 			GuardarScore(GlobalState.score);
 
-			Application.LoadLevel(2);
+			Application.LoadLevel(1);
 		}
 	}
 
@@ -150,13 +150,13 @@ public class ManageRanking : MonoBehaviour
 				case 3: name3 = nombre; break;
 			}
 
-			Application.LoadLevel (2);
+			Application.LoadLevel (1);
 		}
 	}
 
 	void Menu()
 	{
-		//Application.LoadLevel (2);
+		Application.LoadLevel (3);
 	}
 
 	void OnLevelWasLoaded (int level)
