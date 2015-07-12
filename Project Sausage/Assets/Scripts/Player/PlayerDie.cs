@@ -61,6 +61,10 @@ public class PlayerDie : MonoBehaviour {
 		// Deshabilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = false;
 
+		
+		// Deshabilitar lanzar habilidades
+		GameObject.Find("GameState").GetComponent<SelectTrap>().enabled = false;
+
 		// Deshabilitar collider
 		gameObject.GetComponent<Collider> ().enabled = false;
 
@@ -104,5 +108,8 @@ public class PlayerDie : MonoBehaviour {
 
 		// Habilitar movimiento
 		gameObject.GetComponent<PlayerMovement>().enabled = true;
+		
+		// Deshabilitar lanzar habilidades
+		GameObject.Find("GameState").GetComponent<SelectTrap>().enabled = true;
 	}
 }
