@@ -6,6 +6,8 @@ public class PlayerRangeAttack : MonoBehaviour {
 	// Fuerza con la que se lanza el cuchillo
 	public float force;
 	public float inclinacion;
+	public AudioClip throwKnife;
+
 
 	// Thrower
 	public Transform thrower;
@@ -76,5 +78,8 @@ public class PlayerRangeAttack : MonoBehaviour {
 		
 		knifeClone.GetComponent<Rigidbody> ().AddForce (lanzamiento * force);
 		GetComponent<Animator> ().SetBool ("throw", false);
+
+		GetComponent<AudioSource>().clip = throwKnife;
+		GetComponent<AudioSource>().Play ();
 	}
 }
