@@ -34,8 +34,9 @@ public class GlobalState : MonoBehaviour {
 		GlobalState.lifes--;
 		GameObject.Find("Lifes").transform.GetChild(GlobalState.lifes).gameObject.SetActive(false);
 
-		if (lifes == 0)
-			; // FIN DE PARTIDA
+        if (lifes == 0)
+            ;//Time.timeScale = 0.0f;
+			//; // FIN DE PARTIDA
 	}
 
 	void Start () {

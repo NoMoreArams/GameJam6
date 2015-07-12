@@ -9,7 +9,7 @@ public class HealthPoints : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        this.transform.SetAsLastSibling();
 	}
 	
 	// Update is called once per frame
