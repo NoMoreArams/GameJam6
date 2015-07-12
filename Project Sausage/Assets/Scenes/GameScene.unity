@@ -15434,8 +15434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps: {fileID: 0}
-  time: 5
-  nEnemies: 5
   tEnemies: 1
   gameStarted: 0
   incrementBetweenWaves: 2

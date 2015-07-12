@@ -10,7 +10,7 @@ public class HoneyDebuff : MonoBehaviour {
 		this.slow = slow;
 		this.duration = duration;
 		GetComponent<EnemyStats> ().Speed *= (slow / 100f);
-		GetComponent<MeshRenderer> ().material.color = Color.red;
+		//GetComponent<MeshRenderer> ().material.color = Color.red;
 		Debug.Log ("RALENTIZADO");
 		StartCoroutine ("selfDestroy");
 	}
@@ -19,7 +19,7 @@ public class HoneyDebuff : MonoBehaviour {
 		yield return new WaitForSeconds (duration);
 		Debug.Log ("FIN RALENTIZADO");
 		GetComponent<EnemyStats> ().Speed /= (slow / 100f);
-		GetComponent<MeshRenderer> ().material.color = Color.yellow;
+		//GetComponent<MeshRenderer> ().material.color = Color.yellow;
 		// SUBIR LA VELOCIDAD
 		Destroy (this);
 	}
