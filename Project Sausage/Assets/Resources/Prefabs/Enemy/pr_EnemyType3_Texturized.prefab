@@ -2472,8 +2472,8 @@ MonoBehaviour:
   loVeo: 0
   thrower: {fileID: 132382}
   skills:
-  - {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
-  Esperar: 0
+  - {fileID: 125718, guid: 7bdc4fc71329b25469f25c6248bb2620, type: 2}
+  Esperar: .698492527
 --- !u!114 &11440292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2540,7 +2540,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: dc090da8bb0344c6c8bbf86eb6c16140, type: 2}
+  - {fileID: 2100000, guid: fc5cec1852ee84451b940233baa5bcf4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -2638,7 +2638,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: dc090da8bb0344c6c8bbf86eb6c16140, type: 2}
+  - {fileID: 2100000, guid: fc5cec1852ee84451b940233baa5bcf4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -2736,7 +2736,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: dc090da8bb0344c6c8bbf86eb6c16140, type: 2}
+  - {fileID: 2100000, guid: fc5cec1852ee84451b940233baa5bcf4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -2855,6 +2855,14 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2d2ea65129a13460895380a0bbd54b37, type: 2}
+    - target: {fileID: 0}
+      propertyPath: skills.Array.data[0]
+      value: 
+      objectReference: {fileID: 125718, guid: 7bdc4fc71329b25469f25c6248bb2620, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Esperar
+      value: .698492527
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 198214}

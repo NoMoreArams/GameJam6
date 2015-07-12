@@ -107,6 +107,7 @@ GameObject:
   - 114: {fileID: 11419722}
   - 114: {fileID: 11408290}
   - 114: {fileID: 11458614}
+  - 82: {fileID: 8238838}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -880,6 +881,7 @@ GameObject:
   - 81: {fileID: 8183356}
   - 114: {fileID: 11403928}
   - 114: {fileID: 11430646}
+  - 82: {fileID: 8296056}
   m_Layer: 2
   m_Name: Camera
   m_TagString: MainCamera
@@ -1320,7 +1322,7 @@ GameObject:
   - 95: {fileID: 9563196}
   - 64: {fileID: 6461648}
   - 114: {fileID: 11492708}
-  - 82: {fileID: 8275970}
+  - 82: {fileID: 8215328}
   m_Layer: 2
   m_Name: Sarten
   m_TagString: Sarten
@@ -1682,7 +1684,7 @@ Transform:
   m_Children:
   - {fileID: 488158}
   m_Father: {fileID: 454046}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &402212
 Transform:
   m_ObjectHideFlags: 1
@@ -2312,7 +2314,7 @@ Transform:
   m_LocalScale: {x: 2.35714293, y: 2.35714293, z: 2.35714293}
   m_Children: []
   m_Father: {fileID: 454046}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &451980
 Transform:
   m_ObjectHideFlags: 1
@@ -2359,15 +2361,15 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.46000004, y: -.00999999978, z: 4.23670006}
+  m_LocalPosition: {x: -8.01000023, y: -.00999999978, z: -.100000001}
   m_LocalScale: {x: .75999999, y: .75999999, z: .75999999}
   m_Children:
-  - {fileID: 469592}
   - {fileID: 487786}
   - {fileID: 464728}
   - {fileID: 402056}
   - {fileID: 450856}
   - {fileID: 493966}
+  - {fileID: 469592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &455686
@@ -2497,7 +2499,7 @@ Transform:
   m_LocalScale: {x: 2.35714293, y: 2.35714293, z: 2.35714293}
   m_Children: []
   m_Father: {fileID: 454046}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &465586
 Transform:
   m_ObjectHideFlags: 1
@@ -2572,7 +2574,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454046}
-  m_RootOrder: 0
+  m_RootOrder: 5
 --- !u!4 &469674
 Transform:
   m_ObjectHideFlags: 1
@@ -2880,7 +2882,7 @@ Transform:
   m_LocalScale: {x: 2.35714293, y: 2.35714293, z: 2.35714293}
   m_Children: []
   m_Father: {fileID: 454046}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &488158
 Transform:
   m_ObjectHideFlags: 1
@@ -2957,7 +2959,7 @@ Transform:
   m_LocalScale: {x: 2.35714293, y: 2.35714293, z: 2.35714293}
   m_Children: []
   m_Father: {fileID: 454046}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &494900
 Transform:
   m_ObjectHideFlags: 1
@@ -3146,7 +3148,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159012}
   m_Enabled: 1
---- !u!82 &8275970
+--- !u!82 &8215328
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3162,6 +3164,144 @@ AudioSource:
   Loop: 0
   Mute: 0
   Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8238838
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108092}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8296056
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159012}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 84429da1af72e4c99a6550f384e85d1b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .666999996
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3282,8 +3422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 159012}
-  max_ry: 0
-  min_ry: 0
+  max_ry: -.100000001
+  min_ry: .100000001
 --- !u!114 &11419722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3295,8 +3435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27076ab09b17d4f6bb75eee853289e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 5
-  Health: 5
+  MaxHealth: 10
+  Health: 10
   Speed: 3
   Damage: 2
   Coins: 10
@@ -3326,7 +3466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KnifeMelee: {fileID: 184408}
-  cooldown: 3
+  cooldown: 1.5
   Esperar: .875
 --- !u!114 &11462902
 MonoBehaviour:
@@ -3352,8 +3492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1000
-  inclinacion: .100000001
-  throwKnife: {fileID: 0}
+  inclinacion: 0
+  throwKnife: {fileID: 8300000, guid: 9d9a582363e68465f86ab4fabe756c58, type: 3}
   thrower: {fileID: 425160}
   knife: {fileID: 171526, guid: 417eeb9e8f55c4766b51ced1505947bf, type: 2}
   cooldown: 1
