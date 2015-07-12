@@ -28,7 +28,7 @@ public class HitController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !markToDestroy)
         {
             DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
             db.Execute(damage);

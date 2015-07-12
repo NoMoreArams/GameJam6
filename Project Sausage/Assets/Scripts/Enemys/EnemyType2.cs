@@ -51,14 +51,18 @@ public class EnemyType2 : EnemyBase
     {
         while (true)
         {
-            GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position, transform.rotation) as GameObject;
+            
             Vector3 w_targetAux = targetPlayer.transform.position;
             w_targetAux.y = thrower.transform.position.y;
             Vector3 w_direction = w_targetAux - thrower.transform.position;
-            //w_direction = w_direction / w_direction.magnitude;
+            w_direction = w_direction / w_direction.magnitude;
+            
+            w_targetAux += w_direction * 10;
+
+            GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position, Quaternion.LookRotation(w_direction)) as GameObject;
             
             ShootController w_shootControler = ob_shoot.GetComponent<ShootController>();
-            w_shootControler.SetPlayerTarget(w_direction);
+            w_shootControler.SetPlayerTarget(w_targetAux);
             w_shootControler.SetEnemyDamage(enemyStats.Damage);
             
             yield return new WaitForSeconds(3.0f);

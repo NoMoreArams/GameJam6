@@ -23,7 +23,6 @@ public class ShootController : MonoBehaviour {
         {
             transform.position = Vector3.MoveTowards(transform.position, direction, Time.deltaTime * speed);
             //transform.Translate(direction * Time.deltaTime * speed);
-            Debug.DrawRay(transform.position, direction, Color.yellow);
         }
 
         if (markToDestroy)

@@ -4,7 +4,6 @@ using System.Collections;
 public class EnemyType1 : EnemyBase {
 
     public GameObject[] skills;
-
 	public float Esperar;
 
     protected override void Awake()
@@ -60,7 +59,7 @@ public class EnemyType1 : EnemyBase {
             GetComponent<Animator>().SetBool("attack", true);
             GameObject ob_hit = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
             ob_hit.transform.parent = thrower.transform;
-            ob_hit.gameObject.name = "Hit";
+            ob_hit.gameObject.name = "Kick";
             HitController w_shootControler = ob_hit.GetComponent<HitController>();
             w_shootControler.SetEnemyDamage(enemyStats.Damage);
             StartCoroutine("Wait");
