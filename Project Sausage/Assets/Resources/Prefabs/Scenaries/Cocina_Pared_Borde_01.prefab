@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 457086}
   - 33: {fileID: 3344228}
   - 23: {fileID: 2336696}
-  - 95: {fileID: 9562088}
   - 64: {fileID: 6423916}
   m_Layer: 0
   m_Name: Cocina_Pared_Borde_01
@@ -74,23 +73,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: d8cdc34e1d0d6431ba4f488d6c03e14c, type: 3}
---- !u!95 &9562088
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 180430}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d8cdc34e1d0d6431ba4f488d6c03e14c, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

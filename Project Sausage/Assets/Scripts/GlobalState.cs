@@ -11,8 +11,8 @@ public class GlobalState : MonoBehaviour {
 	public PlayerStats ps;
 	public static float time = 5f;
 	private float time2Start;
-	public static int nEnemies;
-	public float tEnemies;
+	public static int nEnemies = 5;
+	public float tEnemies = 1;
 	public bool gameStarted = false;
 	public int incrementBetweenWaves;
 
@@ -34,8 +34,9 @@ public class GlobalState : MonoBehaviour {
 		GlobalState.lifes--;
 		GameObject.Find("Lifes").transform.GetChild(GlobalState.lifes).gameObject.SetActive(false);
 
-        if (lifes == 0)
+        if (lifes == 0) {
 			GlobalState.InitGame ();
+		}
 	}
 
 	void Start () {
@@ -51,7 +52,7 @@ public class GlobalState : MonoBehaviour {
 			time2StartText.SetActive(false);
 			time2Start = 20;
 			nEnemies += incrementBetweenWaves;
-		} else if (time2Start <= 10 && time2Start >= 0) { 
+		} else if (time2Start <= 10 && time2Start >= 0 && gameStarted) { 
 			time2StartText.SetActive(true);
 			time2Start -= Time.fixedDeltaTime;
 			time2StartText.GetComponent<Text>().text = time2Start.ToString("F0");
@@ -66,6 +67,7 @@ public class GlobalState : MonoBehaviour {
 	}
 
 	public static void InitGame () {
+		Debug.Log ("Iniciando nuevo juego");
 		round = 0;
 		score = 0;
 		lifes = 4;
