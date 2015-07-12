@@ -64,6 +64,8 @@ public class EnemyMovement : MonoBehaviour {
 
     public void ResumeMovenment()
     {
+        /*if (playerTarget)
+            SetEnemyDestination(playerTarget.transform.position);*/
         enemyAgent.Resume();
     }
 

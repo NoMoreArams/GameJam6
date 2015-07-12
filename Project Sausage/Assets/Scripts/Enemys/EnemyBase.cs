@@ -61,11 +61,11 @@ public class EnemyBase : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        /*if (isAttacker)
+        if (isAttacker)
         {
             distancia = Vector3.Distance(transform.position, targetPlayer.transform.position);
             
-        }*/
+        }
 	}
 
     protected virtual void Movement()
@@ -80,13 +80,17 @@ public class EnemyBase : MonoBehaviour {
 
     void MovenmentToAttack()
     {
-        if (InRankAttack(rankAttack) && CanISee())
+        if (InRankAttack(rankAttack))
         {
             enemyMovement.StopMovenment();
             StarAttack();
             actualState = EnemyStates.Attack;
         }
-        else if (!InRankAttack(rankAttacker) || !CanISee())
+        else if (InRankAttack(rankAttacker))
+        {
+            enemyMovement.MoveToTarget(targetPlayer.transform.position, targetPlayer);
+        }
+        else if (!InRankAttack(rankAttacker))
         {
             enemyMovement.ResumeMovenment();
             actualState = EnemyStates.movenment;
@@ -96,9 +100,10 @@ public class EnemyBase : MonoBehaviour {
 
     protected virtual void Attack()
     {
-        if (!InRankAttack(rankAttack) || !CanISee())
+        if (!InRankAttack(rankAttack))
         {
             actualState = EnemyStates.movenment;
+            //enemyMovement.MoveToTarget(targetPlayer.transform.position, targetPlayer);
             enemyMovement.ResumeMovenment();
         }
     }
@@ -136,7 +141,7 @@ public class EnemyBase : MonoBehaviour {
     bool CanISee()
     {
         return true;
-        if (!isAttacker)
+        /*if (!isAttacker)
             return false;
 
         RaycastHit hit;
@@ -153,7 +158,7 @@ public class EnemyBase : MonoBehaviour {
                 return true;
             }
         }
-        return false;
+        return false;*/
     }
 
 }
