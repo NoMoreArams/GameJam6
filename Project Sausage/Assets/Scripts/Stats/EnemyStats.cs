@@ -10,9 +10,13 @@ public class EnemyStats : PlayerStats {
 
     private NavMeshAgent enemyAgent;
 
+    private GameObject player;
+
+
     void Awake()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
 	// Use this for initialization
@@ -57,5 +61,21 @@ public class EnemyStats : PlayerStats {
     protected override void UpdateEnemyCanvas(int pe_damage)
     {
         healthPoints.UpdateHealthPoints(pe_damage);
+    }
+
+    protected override void UpdateHealthPoints()
+    {
+        healthPoints.gameObject.SetActive(IsFrontFromPlayer());
+    }
+
+    bool IsFrontFromPlayer()
+    {
+        Vector3 directionToPlayer = player.transform.position - transform.position;
+        float angle = Vector3.Angle(player.transform.forward, directionToPlayer);
+        float distance = directionToPlayer.magnitude;
+
+        if (Mathf.Abs(angle) > 90 || distance < 1.5)
+            return true;
+        return false;
     }
 }

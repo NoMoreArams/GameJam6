@@ -26,6 +26,8 @@ public class PlayerStats : MonoBehaviour {
 			alive = false;
 		else
 			alive = true;
+
+        UpdateHealthPoints();
 	}
 
 	// Recibir daño
@@ -42,6 +44,11 @@ public class PlayerStats : MonoBehaviour {
 	}
 
     protected virtual void UpdateEnemyCanvas(int dmg)
+    {
+
+    }
+
+    protected virtual void UpdateHealthPoints()
     {
 
     }

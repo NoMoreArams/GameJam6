@@ -7,6 +7,11 @@ public class HealthPoints : MonoBehaviour {
     private int actualHealthPoints;
     private Transform anchorCanvas;
 
+    void Awake()
+    {
+        
+    }
+
 	// Use this for initialization
 	void Start () {
         this.transform.SetAsLastSibling();
@@ -45,4 +50,5 @@ public class HealthPoints : MonoBehaviour {
             w_contDamage--;
         }
     }
+
 }
