@@ -31,7 +31,7 @@ public class ManageRanking : MonoBehaviour
 			ObtenerScore();
 			GuardarScore(GlobalState.score);
 
-			Application.LoadLevel(1);
+			Application.LoadLevel(2);
 		}
 	}
 
@@ -40,7 +40,7 @@ public class ManageRanking : MonoBehaviour
 		DontDestroyOnLoad (gameObject);
 	}
 
-	void ObtenerScore()
+	public void ObtenerScore()
 	{
 		if (PlayerPrefs.HasKey ("name1"))
 		{
@@ -61,7 +61,7 @@ public class ManageRanking : MonoBehaviour
 		}
 	}
 
-	void GuardarScore(int sc)
+	public void GuardarScore(int sc)
 	{
 		//sc = score1 + 1; // DEBUG -- Borrar
 
@@ -141,22 +141,37 @@ public class ManageRanking : MonoBehaviour
 
 		if (nombre != "")
 		{
-			PlayerPrefs.SetString (namePuesto, nombre);
-
 			switch(puesto)
 			{
-				case 1: name1 = nombre; break;
-				case 2: name2 = nombre; break;
-				case 3: name3 = nombre; break;
+				case 1: name1 = nombre; 
+						PlayerPrefs.SetString ("name1", nombre);break;
+
+				case 2: name2 = nombre;
+						PlayerPrefs.SetString ("name2", nombre); break;
+
+				case 3: name3 = nombre;
+						PlayerPrefs.SetString ("name3", nombre); break;
 			}
 
-			Application.LoadLevel (1);
+			puesto = -1;
+
+			Application.LoadLevel (2);
 		}
 	}
 
 	void Menu()
 	{
-		Application.LoadLevel (3);
+		//GlobalState.InitGame ();
+
+		GlobalState.round = 0;
+		GlobalState.score = 0;
+		GlobalState.lifes = 4;
+		GlobalState.coins = 10;
+		GlobalState.time = 10f;
+		GlobalState.nEnemies = 5;
+
+		Destroy (gameObject);
+		Application.LoadLevel (0);
 	}
 
 	void OnLevelWasLoaded (int level)
@@ -170,19 +185,39 @@ public class ManageRanking : MonoBehaviour
 			GameObject.Find ("txtNombre1").GetComponent<Text>().text = name1;
 			GameObject.Find ("txtScore1").GetComponent<Text>().text = score1.ToString();
 
+			// No mostrar
+			if(score1 == 0)
+			{
+				GameObject.Find ("txtNombre1").SetActive(false);
+				GameObject.Find ("txtScore1").SetActive(false);
+			}
+
 			GameObject.Find ("txtNombre2").GetComponent<Text>().text = name2;
 			GameObject.Find ("txtScore2").GetComponent<Text>().text = score2.ToString();
+
+			// No mostrar
+			if(score2 == 0)
+			{
+				GameObject.Find ("txtNombre2").SetActive(false);
+				GameObject.Find ("txtScore2").SetActive(false);
+			}
 
 			GameObject.Find ("txtNombre3").GetComponent<Text>().text = name3;
 			GameObject.Find ("txtScore3").GetComponent<Text>().text = score3.ToString();
 
+			// No mostrar
+			if(score3 == 0)
+			{
+				GameObject.Find ("txtNombre3").SetActive(false);
+				GameObject.Find ("txtScore3").SetActive(false);
+			}
+
 			// Guardar nombre
-			if(name1 == "")
+			if(puesto > 0)
 			{
 				// Guardar
 				GameObject.Find("btGuardar").GetComponent<Button>().onClick.AddListener (() => 
 				                        { GuardarNombre();});
-
 
 				// Ocultar continuar
 				GameObject.Find ("btContinuar").SetActive(false);
