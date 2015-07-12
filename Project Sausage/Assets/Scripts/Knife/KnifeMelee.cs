@@ -15,6 +15,12 @@ public class KnifeMelee : MonoBehaviour {
 
 	// Player
 	public GameObject Player;
+    private AudioSource audioSource;
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
 	// Use this for initialization
 	void Start ()
@@ -65,6 +71,7 @@ public class KnifeMelee : MonoBehaviour {
 					// Daño
 					DamageDebuff db = other.gameObject.AddComponent<DamageDebuff> ();
 					db.Execute (Player.GetComponent<PlayerStats>().Damage);
+                    audioSource.Play();
 
 					// Debug
 					Debug.Log("Golpe melee " + _golpes);

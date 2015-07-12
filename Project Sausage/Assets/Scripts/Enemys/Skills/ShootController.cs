@@ -6,7 +6,11 @@ public class ShootController : MonoBehaviour {
     private Vector3 direction;
     private int damage;
     public float speed;
+    public GameObject ball;
     private bool markToDestroy = false;
+
+    public AudioSource[] audioSources;
+
 	// Use this for initialization
 	void Start () {
         
@@ -19,7 +23,11 @@ public class ShootController : MonoBehaviour {
             transform.Translate(direction * Time.deltaTime * speed);
 
         if (markToDestroy)
-            DestroyImmediate(gameObject);
+        {
+            DestroyImmediate(ball);
+            if (!audioSources[0].isPlaying)
+                DestroyImmediate(gameObject);
+        }
 	}
 
     void OnTriggerEnter(Collider other)
@@ -28,6 +36,7 @@ public class ShootController : MonoBehaviour {
         {
             DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
             db.Execute(damage);
+            audioSources[0].Play();
             markToDestroy = true;
         }
     }

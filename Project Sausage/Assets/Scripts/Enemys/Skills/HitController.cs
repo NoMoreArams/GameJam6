@@ -6,6 +6,13 @@ public class HitController : MonoBehaviour {
 
     private int damage;
     private bool markToDestroy = false;
+    private AudioSource kickSource;
+
+    void Awake()
+    {
+        kickSource = GetComponent<AudioSource>();
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -15,7 +22,7 @@ public class HitController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (markToDestroy)
+        if (markToDestroy && !kickSource.isPlaying)
             DestroyImmediate(gameObject);
     }
 
@@ -25,6 +32,7 @@ public class HitController : MonoBehaviour {
         {
             DamageDebuff db = other.gameObject.AddComponent<DamageDebuff>();
             db.Execute(damage);
+            kickSource.Play();
             markToDestroy = true;
         }
     }
