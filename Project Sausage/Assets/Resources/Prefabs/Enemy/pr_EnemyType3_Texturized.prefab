@@ -2442,7 +2442,7 @@ Animator:
   m_GameObject: {fileID: 198214}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 7d44fbb09e16447e7b19e6fe2e7cbec4, type: 3}
-  m_Controller: {fileID: 9100000, guid: be7e01454cfab45b6b15be1f367ea397, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2d2ea65129a13460895380a0bbd54b37, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2473,6 +2473,7 @@ MonoBehaviour:
   thrower: {fileID: 132382}
   skills:
   - {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
+  Esperar: 0
 --- !u!114 &11440292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2849,7 +2850,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2d2ea65129a13460895380a0bbd54b37, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 198214}
