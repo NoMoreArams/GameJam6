@@ -25,10 +25,10 @@ public class EnemyType2 : EnemyBase
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
 
-    }
+    }*/
 
     protected override void Movement()
     {
@@ -47,7 +47,9 @@ public class EnemyType2 : EnemyBase
         while (true)
         {
             GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position,Quaternion.identity) as GameObject;
-            Vector3 w_direction = targetPlayer.transform.position - thrower.transform.position;
+            Vector3 w_targetAux = targetPlayer.transform.position;
+            w_targetAux.y = thrower.transform.position.y;
+            Vector3 w_direction = w_targetAux - thrower.transform.position;
             w_direction = w_direction / w_direction.magnitude;
             ShootController w_shootControler = ob_shoot.GetComponent<ShootController>();
             w_shootControler.SetPlayerTarget(w_direction);

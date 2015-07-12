@@ -14,6 +14,11 @@ public class TrapMaster : MonoBehaviour {
 		if (other.tag == "Enemy") {
 			if (tAttr.CanUse()) {
 				Execute(other.gameObject);
+				tAttr.hits--;
+				if (tAttr.hits == 0) {
+					gi.trapped = false;
+					Destroy (gameObject);
+				}
 			}
 		}
 	}

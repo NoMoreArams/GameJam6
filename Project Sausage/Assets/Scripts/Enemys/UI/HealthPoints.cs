@@ -9,7 +9,7 @@ public class HealthPoints : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        this.transform.SetAsLastSibling();
 	}
 	
 	// Update is called once per frame
@@ -35,11 +35,14 @@ public class HealthPoints : MonoBehaviour {
         }
     }
 
-    public void UpdateHealthPoints(int pe_healthPoints)
+    public void UpdateHealthPoints(int pe_contDamage)
     {
-        for (int i = actualHealthPoints; i >= 0; i--)
+        int w_contDamage = pe_contDamage;
+        for (int i = actualHealthPoints - 1; i >= 0 && w_contDamage > 0; i--)
         {
             healthPoints[i].gameObject.SetActive(false);
+            actualHealthPoints--;
+            w_contDamage--;
         }
     }
 }

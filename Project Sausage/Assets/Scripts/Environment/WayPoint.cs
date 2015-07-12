@@ -8,7 +8,7 @@ public class WayPoint : MonoBehaviour {
     public WayPoint[] wayPoints;
 	// Use this for initialization
 	void Start () {
-        if (!endWayPoint && nextWayPoint == null)
+        if (!endWayPoint && nextWayPoint == null && wayPoints.Length == 0)
         {
             Debug.LogError("Error en WayPoint. Un WayPoint que no sea final no puede no tener un nextWayPoint");
         }
@@ -27,4 +27,18 @@ public class WayPoint : MonoBehaviour {
             nextWayPoint = wayPoints[w_nextWayPoint];
         }
     }
+
+	void OnDrawGizmos () {
+		if (wayPoints.Length > 0) {
+			foreach(WayPoint wp in wayPoints) {
+				Gizmos.color = Color.green;
+				Gizmos.DrawLine (transform.position, wp.transform.position);
+			}
+		}
+
+		else if(nextWayPoint){
+			Gizmos.color = Color.green;
+			Gizmos.DrawLine (transform.position, nextWayPoint.transform.position);
+		}
+	}
 }

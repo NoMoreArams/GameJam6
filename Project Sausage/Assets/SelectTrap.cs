@@ -39,19 +39,31 @@ public class SelectTrap : MonoBehaviour {
 			}
 		}
 		if (Input.GetMouseButtonDown (0)) {
-			RaycastHit hit = new RaycastHit();
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			if (Physics.Raycast(ray,out hit, 1000)) {
-				if (hit.collider.tag == "Ground" &&
-				    !hit.collider.gameObject.GetComponent<GroundIndividual>().trapped &&
-				    GlobalState.coins >= skillsCost[selected]) {
-					GlobalState.coins -= skillsCost[selected];
-					GameObject go = Instantiate(prefabSkills[selected],
-					                            hit.transform.position + new Vector3(-1f, 0, 1f),
-					                            prefabSkills[selected].transform.rotation) as GameObject;
-					go.GetComponent<TrapMaster>().gi = hit.collider.gameObject.GetComponent<GroundIndividual>();
-					hit.collider.gameObject.GetComponent<GroundIndividual>().trapped = true;
+			if (selected == 0) {
+				GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerRangeAttack>().ThrowKnife();
+			}
+			else if (selected == 1) {
+				if (GlobalState.coins >= skillsCost[selected]) {
+					if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMeleeAttack>().Attack()) {
+						GlobalState.coins -= skillsCost[selected];
+					}
+				}
+			}
+			else {
+				RaycastHit hit = new RaycastHit();
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				if (Physics.Raycast(ray,out hit, 1000)) {
+					if (hit.collider.tag == "Ground" &&
+					    !hit.collider.gameObject.GetComponent<GroundIndividual>().trapped &&
+					    GlobalState.coins >= skillsCost[selected]) {
+						GlobalState.coins -= skillsCost[selected];
+						GameObject go = Instantiate(prefabSkills[selected],
+						                            hit.transform.position + new Vector3(-1f, 0, 1f),
+						                            prefabSkills[selected].transform.rotation) as GameObject;
+						go.GetComponent<TrapMaster>().gi = hit.collider.gameObject.GetComponent<GroundIndividual>();
+						hit.collider.gameObject.GetComponent<GroundIndividual>().trapped = true;
 
+					}
 				}
 			}
 		}

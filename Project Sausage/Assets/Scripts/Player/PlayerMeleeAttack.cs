@@ -22,35 +22,38 @@ public class PlayerMeleeAttack : MonoBehaviour {
 	void Update ()
 	{
 		// Click derecho
-		if (Input.GetMouseButtonDown (1)) {
-			if (time2Attack <= 0) {
-				Attack ();
-				time2Attack = cooldown;
-			}
-		}
+		//if (Input.GetMouseButtonDown (1)) {
+		//		Attack ();
+		//		time2Attack = cooldown;
+		//	}
+		//}
 		time2Attack -= Time.deltaTime;
 	}
 
 	// Atacar
-	private void Attack()
+	public bool Attack()
 	{
-		// Comenzar a atacar
-		KnifeMelee.GetComponent<KnifeMelee> ().BeginAttack ();
-		GetComponent<Animator> ().SetBool ("attack", true);
-
-		// DEBUG -- Esperar
-		StartCoroutine ("Wait");
+		if (time2Attack <= 0) {
+			time2Attack = cooldown;
+			
+			// Comenzar a atacar
+			KnifeMelee.GetComponent<KnifeMelee> ().BeginAttack ();
+			GetComponent<Animator> ().SetBool ("attack", true);
+			
+			// DEBUG -- Esperar
+			StartCoroutine ("Wait");
+			return true;
+		}
+		return false;
 
 	}
 
 	// DEBUG: tiempo
-	IEnumerator Wait()
+	public IEnumerator Wait()
 	{
 		// Esperar
 		yield return new WaitForSeconds (Esperar);
-		
-		// Terminar de atacar
-		KnifeMelee.GetComponent<KnifeMelee> ().EndAttack ();
+
 		GetComponent<Animator> ().SetBool ("attack", false);
 	}
 }

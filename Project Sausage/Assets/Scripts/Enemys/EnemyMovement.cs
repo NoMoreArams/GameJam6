@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour {
     private NavMeshAgent enemyAgent;
     private EnemyStats enemyStats;
     public WayPoint wayPointToMove;
+    private GameObject playerTarget;
 
     public float rank = 1.5f;
     public bool haveTarget = false;
@@ -39,9 +40,15 @@ public class EnemyMovement : MonoBehaviour {
                 }
                 else
                 {
-                    DestroyImmediate(gameObject);
+                    GlobalState.subsLife();
+                    enemyStats.KillEnemy();
+                    //DestroyImmediate(gameObject);
                 }
             }
+        }
+        else
+        {
+            RotateEnemy();
         }
     }
 
@@ -60,9 +67,10 @@ public class EnemyMovement : MonoBehaviour {
         enemyAgent.Resume();
     }
 
-    public void MoveToTarget(Vector3 pe_targetPosition)
+    public void MoveToTarget(Vector3 pe_targetPosition, GameObject pe_playerTarget)
     {
         haveTarget = true;
+        playerTarget = pe_playerTarget;
         SetEnemyDestination(pe_targetPosition);
     }
 
@@ -112,5 +120,19 @@ public class EnemyMovement : MonoBehaviour {
             return true;
 
         return false;
+    }
+
+    void RotateEnemy()
+    {
+        float angulo = Vector3.Angle(playerTarget.transform.position - transform.position, transform.forward);
+        if (angulo < 2.0f)
+        {
+            return;
+        }
+        else
+        {
+            Quaternion rot = Quaternion.LookRotation(playerTarget.transform.position - transform.position, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * 2.5f);
+        }
     }
 }

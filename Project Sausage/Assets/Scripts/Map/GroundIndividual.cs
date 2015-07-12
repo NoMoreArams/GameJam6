@@ -3,15 +3,14 @@ using System.Collections;
 
 public class GroundIndividual : MonoBehaviour {
 
-	public Material normal;
-	public Material selected;
+	public Color normalColor;
 	public bool trapped = false;
 
 	void OnMouseEnter () {
-		GetComponent<MeshRenderer> ().material = selected;
+		GetComponent<MeshRenderer> ().material.color = Color.white;
 	}
 
 	void OnMouseExit () {
-		GetComponent<MeshRenderer> ().material = normal;
+		GetComponent<MeshRenderer> ().material.color = normalColor;
 	}
 }

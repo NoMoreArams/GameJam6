@@ -27,6 +27,11 @@ public class EnemyStats : PlayerStats {
         GlobalState.addScore(Score);
     }
 
+    public void KillEnemy()
+    {
+        Health = 0;
+    }
+
     void SetAnchorCanvas()
     {
         GameObject enemyCanvas = GameObject.FindGameObjectWithTag("CanvasEnemys");
@@ -42,5 +47,15 @@ public class EnemyStats : PlayerStats {
         healthPoints = go_AnchorCanvas.GetComponent<HealthPoints>();
         healthPoints.SetAnchorCanvas(anchorCanvas);
         healthPoints.SetInitialHealthPoints(Health);
+    }
+
+    public GameObject GetEnemyCanvas()
+    {
+        return healthPoints.gameObject;
+    }
+
+    protected override void UpdateEnemyCanvas(int pe_damage)
+    {
+        healthPoints.UpdateHealthPoints(pe_damage);
     }
 }

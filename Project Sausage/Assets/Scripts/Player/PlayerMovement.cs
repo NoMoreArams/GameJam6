@@ -41,20 +41,25 @@ public class PlayerMovement : MonoBehaviour {
 		transform.Translate(h * speed * Time.deltaTime, 0.0f, v * speed * Time.deltaTime);
 
 		// Rotar player (horizontal)
-		transform.Rotate(Vector3.up * rx * speed * 2);
+		transform.Rotate(Vector3.up * rx * speed * 4);
 
 		// Comprobar limites de rotacion
 			// Si esta arriba y mueves hacia abajo
-		if((camara.transform.rotation.x <= min_ry && ry < 0)
+		if ((camara.transform.rotation.x <= min_ry && ry < 0)
 
-		   // Si esta abajo y mueves hacia arriba
-		   || (camara.transform.rotation.x >= max_ry && ry > 0)
+		// Si esta abajo y mueves hacia arriba
+			|| (camara.transform.rotation.x >= max_ry && ry > 0)
 
-		   // Si esta entre medias
-		   || (camara.transform.rotation.x > min_ry && camara.transform.rotation.x < max_ry))
-				// Rotar camara (vertical)
-				camara.transform.Rotate (Vector3.right, -ry * speed);
+		// Si esta entre medias
+			|| (camara.transform.rotation.x > min_ry && camara.transform.rotation.x < max_ry)) {
 
+			// Rotar camara (vertical)
+			if (Input.mousePosition.x < 100)
+				camara.transform.Rotate (Vector3.left, 0f /*-ry * speed*/);
+			else if (Input.mousePosition.x > Screen.width - 100)
+				camara.transform.Rotate (Vector3.right, 0f /*-ry * speed*/);
+		}
+		
 	}
 
 	void FixedUpdate()

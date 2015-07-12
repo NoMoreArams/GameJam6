@@ -174,7 +174,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125664}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb805e48764b4830ba5275fc5e1957d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gi: {fileID: 0}
   fire: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 2}
 --- !u!114 &11475334
 MonoBehaviour:
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60f73eb920b6402391e4458c040a79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 0
+  hits: 3
   damage: 2
   coins: 0
   debuff: 0
@@ -279,6 +280,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: damage
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hits
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
