@@ -246,11 +246,12 @@ MonoBehaviour:
   actualState: 0
   targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 40
-  rankAttacker: 10
+  percentAttacker: 0
+  rankAttacker: 35
   rankAttack: 1
   ataco: 0
   distancia: 0
+  loVeo: 0
   skills:
   - {fileID: 165916, guid: be31e3ee023238740a56d1aa0a8339be, type: 2}
 --- !u!114 &11499198
@@ -374,7 +375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: percentAttacker
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
@@ -391,6 +392,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rankAttacker
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

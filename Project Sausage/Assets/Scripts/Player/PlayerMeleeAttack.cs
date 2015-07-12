@@ -55,5 +55,7 @@ public class PlayerMeleeAttack : MonoBehaviour {
 		yield return new WaitForSeconds (Esperar);
 
 		GetComponent<Animator> ().SetBool ("attack", false);
+        KnifeMelee.GetComponent<KnifeMelee>().EndAttack();
+
 	}
 }

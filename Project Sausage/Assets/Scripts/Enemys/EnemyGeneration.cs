@@ -5,8 +5,6 @@ public class EnemyGeneration : MonoBehaviour {
 
     public GameObject[] enemy;
     public WayPoint[] initialsWayPoints;
-    public int enemysIncrement = 2;
-    public float timeBetweenIncrement = 2;
 
     private int numEnemys;
     private float timeBetweenEnemys;

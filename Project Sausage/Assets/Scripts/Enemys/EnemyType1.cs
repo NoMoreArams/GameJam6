@@ -26,9 +26,9 @@ public class EnemyType1 : EnemyBase {
     }
 
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
 	
-	}
+	}*/
 
     protected override void Movement()
     {
@@ -39,34 +39,38 @@ public class EnemyType1 : EnemyBase {
 
     protected override void Attack()
     {
-        base.Attack();
+        if(!GetComponent<Animator>().GetBool("attack"))
+            base.Attack();
     }
 
-    void ThrowSkill()
+    /*void ThrowSkill()
     {
 		GetComponent<Animator> ().SetBool ("attack", true);
         GameObject ob_hit = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
-        ob_hit.transform.parent = transform;
+        ob_hit.transform.parent = thrower.transform;
         ob_hit.gameObject.name = "Hit";
         HitController w_shootControler = ob_hit.GetComponent<HitController>();
         w_shootControler.SetEnemyDamage(enemyStats.Damage);
 		StartCoroutine ("Wait");
-    }
-	/*IEnumerator ThrowSkill()
+    }*/
+	IEnumerator ThrowSkill()
     {
         // Realizar en animación
         while (true)
         {
-            GameObject ob_shoot = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
-            Vector3 w_direction = targetPlayer.transform.position - thrower.transform.position;
-            w_direction = w_direction / w_direction.magnitude;
-            ShootController w_shootControler = ob_shoot.GetComponent<ShootController>();
-            w_shootControler.SetPlayerTarget(w_direction);
+            GetComponent<Animator>().SetBool("attack", true);
+            GameObject ob_hit = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
+            ob_hit.transform.parent = thrower.transform;
+            ob_hit.gameObject.name = "Hit";
+            HitController w_shootControler = ob_hit.GetComponent<HitController>();
             w_shootControler.SetEnemyDamage(enemyStats.Damage);
+            StartCoroutine("Wait");
 
             yield return new WaitForSeconds(3.0f);
+            if (actualState != EnemyStates.Attack)
+                break;
         }
-    }*/
+    }
 
 	IEnumerator Wait()
 	{
@@ -78,6 +82,6 @@ public class EnemyType1 : EnemyBase {
 
     protected override void StarAttack()
     {
-        ThrowSkill();
+        StartCoroutine("ThrowSkill");
     }
 }
