@@ -1,75 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100606
+--- !u!1 &170484
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 453430}
-  - 33: {fileID: 3330128}
-  - 23: {fileID: 2350910}
+  - 4: {fileID: 452222}
+  - 33: {fileID: 3385230}
+  - 23: {fileID: 2354566}
   m_Layer: 0
-  m_Name: Techo_01
+  m_Name: Luz_Brillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &133150
+--- !u!1 &178804
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 480096}
-  - 33: {fileID: 3345898}
-  - 23: {fileID: 2323624}
+  - 4: {fileID: 473174}
+  - 33: {fileID: 3348186}
+  - 23: {fileID: 2352956}
   m_Layer: 0
-  m_Name: Cocina_Suelo_01
+  m_Name: Fluorescente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &453430
+--- !u!4 &452222
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100606}
+  m_GameObject: {fileID: 170484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 480096}
+  m_Father: {fileID: 473174}
   m_RootOrder: 0
---- !u!4 &480096
+--- !u!4 &473174
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133150}
+  m_GameObject: {fileID: 178804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 3.49999976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 453430}
+  - {fileID: 452222}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2323624
+--- !u!23 &2352956
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133150}
+  m_GameObject: {fileID: 178804}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: f0e5ccb2d3077466b86c7fc3d167f33b, type: 2}
+  - {fileID: 2100000, guid: 63dbc7ba9726d174496543793f4ce3fa, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -83,17 +83,17 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &2350910
+--- !u!23 &2354566
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100606}
+  m_GameObject: {fileID: 170484}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: f0e5ccb2d3077466b86c7fc3d167f33b, type: 2}
+  - {fileID: 2100000, guid: 381b146b8963ea040ad1d8892da59e60, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -107,20 +107,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3330128
+--- !u!33 &3348186
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100606}
-  m_Mesh: {fileID: 4300002, guid: d8eb7477adc604dc2900364ada20c6c5, type: 3}
---- !u!33 &3345898
+  m_GameObject: {fileID: 178804}
+  m_Mesh: {fileID: 4300000, guid: c1af5d783a7126d4bbfe06dbfb0065af, type: 3}
+--- !u!33 &3385230
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133150}
-  m_Mesh: {fileID: 4300000, guid: d8eb7477adc604dc2900364ada20c6c5, type: 3}
+  m_GameObject: {fileID: 170484}
+  m_Mesh: {fileID: 4300002, guid: c1af5d783a7126d4bbfe06dbfb0065af, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -130,5 +130,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 133150}
+  m_RootGameObject: {fileID: 178804}
   m_IsPrefabParent: 1
