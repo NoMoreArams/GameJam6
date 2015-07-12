@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ShootController : MonoBehaviour {
 
-    private Vector3 direction;
+    public Vector3 direction;
     private int damage;
     public float speed;
     public GameObject ball;
@@ -20,7 +20,12 @@ public class ShootController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (direction != null)
-            transform.Translate(direction * Time.deltaTime * speed);
+        {
+
+            transform.position = Vector3.MoveTowards(transform.position, direction, Time.deltaTime * speed);
+            //transform.Translate(direction * Time.deltaTime * speed);
+            Debug.DrawRay(transform.position, direction, Color.yellow);
+        }
 
         if (markToDestroy)
         {

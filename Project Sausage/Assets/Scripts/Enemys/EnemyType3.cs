@@ -3,13 +3,11 @@ using System.Collections;
 
 public class EnemyType3 : EnemyBase
 {
-    private GameObject thrower;
     public GameObject[] skills;
 
     protected override void Awake()
     {
         base.Awake();
-        thrower = transform.FindChild("Thrower").gameObject;
     }
     // Use this for initialization
     protected override void Start()
@@ -67,6 +65,6 @@ public class EnemyType3 : EnemyBase
 
     protected override void StarAttack()
     {
-        ThrowSkill();
+        //ThrowSkill();
     }
 }
