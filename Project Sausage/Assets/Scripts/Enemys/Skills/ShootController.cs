@@ -21,7 +21,6 @@ public class ShootController : MonoBehaviour {
 	void Update () {
         if (direction != null)
         {
-
             transform.position = Vector3.MoveTowards(transform.position, direction, Time.deltaTime * speed);
             //transform.Translate(direction * Time.deltaTime * speed);
             Debug.DrawRay(transform.position, direction, Color.yellow);
