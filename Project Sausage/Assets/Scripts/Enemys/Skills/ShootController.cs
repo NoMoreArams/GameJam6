@@ -20,7 +20,7 @@ public class ShootController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (direction != null)
-            transform.Translate(direction * Time.deltaTime * speed);
+            transform.Translate(direction * Time.deltaTime * speed * -1);
 
         if (markToDestroy)
         {
