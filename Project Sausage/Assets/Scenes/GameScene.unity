@@ -1926,7 +1926,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be158488743124e60bb95da39c0ea464, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 100158, guid: be158488743124e60bb95da39c0ea464, type: 3}
       propertyPath: m_TagString
@@ -18419,8 +18419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27076ab09b17d4f6bb75eee853289e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 5
-  Health: 5
+  MaxHealth: 10
+  Health: 10
   Speed: 3
   Damage: 2
   Coins: 10
@@ -22486,7 +22486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 100842, guid: 4e18e8060d81d0d4e86e018f9e9b1a83, type: 2}
+  - {fileID: 123860, guid: 20d29f9a2b6414e8cbfb844865bce274, type: 2}
   - {fileID: 108818, guid: 8bfbee49f63835e46bceaafdec055e89, type: 2}
   - {fileID: 173578, guid: baa478edda39e514ebb70e529b2dc268, type: 2}
   initialsWayPoints:

@@ -3,13 +3,14 @@ using System.Collections;
 
 public class EnemyType1 : EnemyBase {
 
-    private GameObject thrower;
+    public GameObject thrower;
     public GameObject[] skills;
+
+	public float Esperar;
 
     protected override void Awake()
     {
         base.Awake();
-        thrower = transform.FindChild("Thrower").gameObject;
     }
 	// Use this for initialization
     protected override void Start()
@@ -31,7 +32,8 @@ public class EnemyType1 : EnemyBase {
 
     protected override void Movement()
     {
-        //StopCoroutine("ThrowSkill");
+		//StopCoroutine("ThrowSkill");
+		GetComponent<Animator> ().SetBool ("attack", false);
         base.Movement();
     }
 
@@ -42,13 +44,15 @@ public class EnemyType1 : EnemyBase {
 
     void ThrowSkill()
     {
+		GetComponent<Animator> ().SetBool ("attack", true);
         GameObject ob_hit = Instantiate(skills[0], thrower.transform.position, Quaternion.identity) as GameObject;
         ob_hit.transform.parent = transform;
         ob_hit.gameObject.name = "Hit";
         HitController w_shootControler = ob_hit.GetComponent<HitController>();
         w_shootControler.SetEnemyDamage(enemyStats.Damage);
+		StartCoroutine ("Wait");
     }
-    /*IEnumerator ThrowSkill()
+	/*IEnumerator ThrowSkill()
     {
         // Realizar en animación
         while (true)
@@ -63,6 +67,14 @@ public class EnemyType1 : EnemyBase {
             yield return new WaitForSeconds(3.0f);
         }
     }*/
+
+	IEnumerator Wait()
+	{
+		// Esperar
+		yield return new WaitForSeconds (Esperar);
+
+		GetComponent<Animator> ().SetBool ("attack", false);
+	}
 
     protected override void StarAttack()
     {

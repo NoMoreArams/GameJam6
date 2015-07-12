@@ -49,13 +49,11 @@ public class PlayerMeleeAttack : MonoBehaviour {
 	}
 
 	// DEBUG: tiempo
-	IEnumerator Wait()
+	public IEnumerator Wait()
 	{
 		// Esperar
 		yield return new WaitForSeconds (Esperar);
-		
-		// Terminar de atacar
-		KnifeMelee.GetComponent<KnifeMelee> ().EndAttack ();
+
 		GetComponent<Animator> ().SetBool ("attack", false);
 	}
 }

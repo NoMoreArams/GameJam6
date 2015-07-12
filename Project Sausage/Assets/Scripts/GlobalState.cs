@@ -62,7 +62,7 @@ public class GlobalState : MonoBehaviour {
 		coinsText.text = coins.ToString ();
 		scoreText.text = score.ToString ();
 
-		hpbar.fillAmount = ps.Health / ps.MaxHealth;
+		hpbar.fillAmount = (float)ps.Health / (float)ps.MaxHealth;
 	}
 
 }
