@@ -28469,7 +28469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 123860, guid: 20d29f9a2b6414e8cbfb844865bce274, type: 2}
+  - {fileID: 131016, guid: e97e4c80d7fff46b2ade930b65227eb2, type: 2}
   - {fileID: 108818, guid: 8bfbee49f63835e46bceaafdec055e89, type: 2}
   - {fileID: 173578, guid: baa478edda39e514ebb70e529b2dc268, type: 2}
   initialsWayPoints:
