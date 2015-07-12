@@ -7,8 +7,9 @@
       <File FileName="Assets/Scripts/Enemys/EnemyType1.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Traps/HoneyDebuff.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemys/EnemyType2.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemys/EnemyType3.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/Enemys/EnemyType3.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemys/Skills/ShootController.cs" Line="23" Column="72" />
+      <File FileName="Assets/Scripts/GlobalState.cs" Line="34" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

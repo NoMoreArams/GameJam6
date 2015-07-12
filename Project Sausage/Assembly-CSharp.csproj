@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Knife\KnifeMelee.cs" />
      <Compile Include="Assets\Scripts\ManageRanking.cs" />
      <Compile Include="Assets\Scripts\Map\GroundIndividual.cs" />
+     <Compile Include="Assets\Scripts\Parpadear.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_LightFlicker.cs" />
      <Compile Include="Assets\Scripts\Particles\CFX_LightIntensityFade.cs" />
