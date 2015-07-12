@@ -35,7 +35,13 @@ public class GlobalState : MonoBehaviour {
 		GameObject.Find("Lifes").transform.GetChild(GlobalState.lifes).gameObject.SetActive(false);
 
         if (lifes == 0) {
-			GlobalState.InitGame ();
+			// Obtener administracion de ranking
+			ManageRanking mr = GameObject.Find("GameState").GetComponent<ManageRanking>();
+
+			mr.ObtenerScore();
+			mr.GuardarScore(GlobalState.score);
+
+			Application.LoadLevel(2);
 		}
 	}
 

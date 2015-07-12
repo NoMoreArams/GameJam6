@@ -19286,6 +19286,7 @@ GameObject:
   - 4: {fileID: 1427146955}
   - 114: {fileID: 1427146954}
   - 114: {fileID: 1427146956}
+  - 114: {fileID: 1427146957}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -19349,6 +19350,17 @@ MonoBehaviour:
   - {fileID: 197008, guid: 8ee23873b652447649c53183962fa0c9, type: 2}
   skillsCost: 0000000001000000010000000300000005000000
   selected: 0
+--- !u!114 &1427146957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427146953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc9ef319336a2b47a425bfc9b6ab619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1430733380 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 133150, guid: cb50c76c1518743beabf72b6f8b2e8c8, type: 2}

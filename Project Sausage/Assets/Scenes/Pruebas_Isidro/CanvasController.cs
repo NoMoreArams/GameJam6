@@ -16,6 +16,7 @@ public class CanvasController : MonoBehaviour {
         {
             pnl_Continue.SetActive(false);
             pnl_Options.SetActive(true);
+			//PlayerPrefs.DeleteAll();
         }
 	}
 }

@@ -6,7 +6,8 @@ public class PanelOptions : MonoBehaviour {
 
     public void OnCLickPlay()
     {
-        Application.LoadLevel(3);
+		//PlayerPrefs.DeleteAll ();
+        Application.LoadLevel(1);
     }
 
     public void OnClickExit()
