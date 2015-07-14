@@ -23,12 +23,12 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
     void FixedUpdate()
-    {
+	{
+		enemyAgent.speed = enemyStats.Speed;
         if (!haveTarget)
         {
             if (!InRank())
             {
-                enemyAgent.speed = enemyStats.Speed;
                 if (CheckDistances())
                     MoveEnemyToNextPoint();
             }

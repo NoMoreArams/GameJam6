@@ -20,7 +20,7 @@ public class EnemyDeath : MonoBehaviour {
         {
             enemyStats.GetRewards();
             DestroyImmediate(enemyStats.GetEnemyCanvas());
-            DestroyImmediate(gameObject);
+            Destroy(gameObject);
         }
 	}
 }
