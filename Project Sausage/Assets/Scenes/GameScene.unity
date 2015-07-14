@@ -25825,7 +25825,87 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eef36e6c3c2344752b59c3cd3d5efcbf, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!4 &1966902058 stripped
+=======
+--- !u!1 &1964947132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100186, guid: e79cdab17e57d4e379131e40b2303d88, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1964947133}
+  m_Layer: 0
+  m_Name: mdl_Chef:rtLeg_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964947133
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400186, guid: e79cdab17e57d4e379131e40b2303d88, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964947132}
+  m_LocalRotation: {x: -.0590011515, y: .0031650872, z: .996819615, w: .0534738898}
+  m_LocalPosition: {x: -.0604697056, y: -.00790753774, z: .0924400091}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1008492765}
+  m_Father: {fileID: 170415357}
+  m_RootOrder: 1
+--- !u!4 &1966902058 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457532, guid: 52ff417c4196646bdb5d489feee3e0ef, type: 2}
+  m_PrefabInternal: {fileID: 2051094016}
+--- !u!1 &1970211272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: e79cdab17e57d4e379131e40b2303d88, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1970211273}
+  m_Layer: 0
+  m_Name: mdl_Chef:bnMiddle_R_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970211273
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: e79cdab17e57d4e379131e40b2303d88, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970211272}
+  m_LocalRotation: {x: 4.37150316e-16, y: -5.55111512e-16, z: -1.07830411e-13, w: 1}
+  m_LocalPosition: {x: -5.82867061e-17, y: 8.77770052e-17, z: -1.11022296e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1341491349}
+  m_Father: {fileID: 648557753}
+  m_RootOrder: 0
+--- !u!1 &1972349664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: e79cdab17e57d4e379131e40b2303d88, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1972349665}
+  - 137: {fileID: 1972349666}
+  m_Layer: 0
+  m_Name: Chef_Low_Gorro_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1972349665
+>>>>>>> origin/master
 Transform:
   m_PrefabParentObject: {fileID: 457532, guid: 52ff417c4196646bdb5d489feee3e0ef, type: 2}
   m_PrefabInternal: {fileID: 2051094016}
