@@ -7,9 +7,9 @@ public class GlobalState : MonoBehaviour {
 	public static int round = 0;
 	public static int score = 0;
 	public static int lifes = 4;
-	public static int coins = 10;
+	public static int coins = 15;
 	public PlayerStats ps;
-	public static float time = 5f;
+	public static float time = 15f;
 	private float time2Start;
 	public static int nEnemies = 5;
 	public float tEnemies = 1;
@@ -56,7 +56,7 @@ public class GlobalState : MonoBehaviour {
 			gameStarted = true;
 			GameObject.Find ("pr_InitialWayPoint").GetComponent<EnemyGeneration> ().StartWave (nEnemies, tEnemies);
 			time2StartText.SetActive(false);
-			time2Start = 20;
+			time2Start = nEnemies + 15;
 			nEnemies += incrementBetweenWaves;
 		} else if (time2Start <= 10 && time2Start >= 0 && gameStarted) { 
 			time2StartText.SetActive(true);
@@ -77,8 +77,8 @@ public class GlobalState : MonoBehaviour {
 		round = 0;
 		score = 0;
 		lifes = 4;
-		coins = 10;
-		time = 10f;
+		coins = 15;
+		time = 15f;
 		nEnemies = 5;
 
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Trap")) {

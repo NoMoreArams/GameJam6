@@ -166,8 +166,8 @@ public class ManageRanking : MonoBehaviour
 		GlobalState.round = 0;
 		GlobalState.score = 0;
 		GlobalState.lifes = 4;
-		GlobalState.coins = 10;
-		GlobalState.time = 10f;
+		GlobalState.coins = 15;
+		GlobalState.time = 15f;
 		GlobalState.nEnemies = 5;
 
 		Destroy (gameObject);

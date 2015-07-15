@@ -2464,7 +2464,7 @@ MonoBehaviour:
   actualState: 0
   targetPlayer: {fileID: 0}
   isAttacker: 0
-  percentAttacker: 100
+  percentAttacker: 35
   rankAttacker: 10
   rankAttack: 1
   ataco: 0
@@ -2862,6 +2862,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Esperar
       value: .698492527
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: percentAttacker
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

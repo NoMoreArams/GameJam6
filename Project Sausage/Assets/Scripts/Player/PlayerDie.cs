@@ -61,10 +61,10 @@ public class PlayerDie : MonoBehaviour {
 	void FixedUpdate()
 	{
 		// Kill
-		if (Input.GetKey (KeyCode.K)) 
+		/*if (Input.GetKey (KeyCode.K)) 
 		{
 			Stats.ReceiveDamage(Stats.Health);
-		}
+		}*/
 	}
 
 	// Morir
